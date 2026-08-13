@@ -53,8 +53,8 @@ export default function Home() {
                     <p className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Core Industry Sectors</p>
                 </div>
                 <div className="bg-white dark:bg-eros-card/50 p-5 rounded-2xl border border-slate-200 dark:border-eros-border/50 shadow-sm">
-                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-eros-bright mb-1">Zero</h2>
-                    <p className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Ad-Blocker Friction</p>
+                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-eros-bright mb-1">100%</h2>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Direct Customer Reach</p>
                 </div>
             </div>
         </div>

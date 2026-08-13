@@ -20,7 +20,7 @@ export default function Projects() {
       color: "text-eros-gold",
       bgColor: "bg-eros-gold/10",
       borderColor: "border-eros-gold/30",
-      desc: "Partnered with premier banking networks to drive premium credit card acquisitions. Our direct face-to-face ambassadors delivered personalized consultations, onboarding thousands of verified cardholders with zero ad-blocker friction."
+      desc: "Partnered with premier banking networks to drive premium credit card acquisitions. Our direct face-to-face ambassadors delivered personalized consultations, onboarding thousands of verified cardholders through direct human engagement."
     },
     {
       title: "Google 360° Property Publishing",
