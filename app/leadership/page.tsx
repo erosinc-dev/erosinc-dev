@@ -26,7 +26,7 @@ export default function Leadership() {
                 {teamMembers.map((member, idx) => (
                     <div key={idx} className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
                         <div className={`w-40 h-40 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg ${member.borderColor} transition-colors`}>
-                            <img src={member.img} alt={member.name} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
+                            <img src={member.img} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500" />
                         </div>
                         <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">{member.name}</h3>
                         <p className={`text-xs font-semibold uppercase tracking-wider mt-1 ${member.color}`}>{member.role}</p>
@@ -44,7 +44,7 @@ export default function Leadership() {
                     No seniority shortcuts. Every leader at Eros Inc. began their trajectory from entry-level roles and developed into management through hands-on coaching and proven results.
                 </p>
                 <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                    Our management training program provides intensive mentoring in direct sales, client relationship management, team building, public speaking, and business administration.
+                    Our management training program provides intensive mentoring in omnichannel sales execution, brand representation, team building, public speaking, and business administration.
                 </p>
                 <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-eros-pink hover:bg-eros-pink/90 text-white transition font-bold shadow-lg shadow-eros-pink/20">
                     Apply for the Program <ArrowRight className="w-4 h-4" />

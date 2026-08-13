@@ -11,18 +11,15 @@ export default function Impact() {
                 <span className="text-xs font-bold uppercase tracking-widest text-eros-cyan">Social Purpose</span>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-6">Social Impact & NGO Outreach</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    At Eros Inc., we champion causes that matter. Our direct face-to-face campaigns connect non-profits directly with long-term donors, driving sustainable funding and community awareness.
+                    At Eros Inc., we champion causes that matter. Our multi-channel community campaigns connect non-profits directly with long-term donors, driving sustainable funding and community awareness.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-                <div className="bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border p-10 rounded-3xl bento-glow shadow-xl">
-                    <div className="w-16 h-16 rounded-2xl bg-eros-cyan/10 border border-eros-cyan/30 text-eros-cyan flex items-center justify-center mb-8">
-                        <Globe className="w-8 h-8"/>
-                    </div>
-                    <h2 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-4">Amplifying Non-Profit Reach</h2>
-                    <p className="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
-                        We actively partner with leading global charities and local NGOs to amplify their humanitarian missions. By giving these organizations a human, face-to-face voice, we build trust and long-term commitment.
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div className="bg-white dark:bg-eros-card p-8 md:p-10 rounded-3xl border border-slate-200 dark:border-eros-border shadow-xl">
+                    <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-4">Empowering Non-Profits</h3>
+                    <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                        We actively partner with leading global charities and local NGOs to amplify their humanitarian missions. By giving these organizations an authentic, human-centered voice, we build trust and long-term commitment.
                     </p>
                     <div className="space-y-4">
                         <div className="flex items-center gap-3">
@@ -41,7 +38,7 @@ export default function Impact() {
                 </div>
 
                 <div className="relative rounded-3xl overflow-hidden border border-slate-200 dark:border-eros-border shadow-2xl aspect-[4/3]">
-                    <img src="/scraped/image_15.jpg" alt="NGO Campaign Outreach" className="w-full h-full object-cover" />
+                    <img src="/gallery/new_event_03.jpg" alt="NGO Campaign Outreach" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                 </div>
             </div>
         </div>

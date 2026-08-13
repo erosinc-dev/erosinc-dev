@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Careers() {
   const roles = [
-    { title: "Business Associate", desc: "Learn direct face-to-face marketing, brand representation, and client engagement fundamentals." },
+    { title: "Business Associate", desc: "Learn multichannel sales strategies, digital brand representation, and client engagement fundamentals." },
     { title: "Crew Leader", desc: "Lead on-ground team operations, mentor new associates, and drive sales targets." },
     { title: "Executive Crew Leader", desc: "Oversee campaign strategies, team expansion, and operational quality control." },
     { title: "Assistant Business Head", desc: "Manage client acquisitions, team administration, and leadership development." },

@@ -1,39 +1,43 @@
-import { Users, Target, TrendingUp, Award, CheckCircle2 } from 'lucide-react';
+import { Users, Target, TrendingUp, Award, CheckCircle2, View, CreditCard, Heart, Briefcase, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Capabilities() {
-  const capabilitiesList = [
+  const businessDivisions = [
     {
-      title: "Direct Face-to-Face Marketing",
-      desc: "In an automated digital world, human trust is the ultimate differentiator. Our team connects directly with target audiences to build lasting brand relationships.",
-      icon: Users,
+      title: "Google 360° Property Publishing",
+      desc: "Capture and publish high-resolution HDR virtual tours to Google Street View and Google Maps, boosting local search visibility and walk-in engagement.",
+      icon: View,
       color: "text-eros-cyan",
       bgColor: "bg-eros-cyan/10",
-      borderColor: "border-eros-cyan/30"
+      borderColor: "border-eros-cyan/30",
+      href: "/businesses/google-360"
     },
     {
-      title: "Brand Acquisition & Client Servicing",
-      desc: "We specialize in acquiring high-value customers for leading institutions across financial services, healthcare, digital marketing, and social media.",
-      icon: Target,
+      title: "Financial Services & Banking Growth",
+      desc: "Accelerating credit card acquisition, banking network expansion, and verified KYC compliance onboarding for premier financial institutions.",
+      icon: CreditCard,
       color: "text-eros-gold",
       bgColor: "bg-eros-gold/10",
-      borderColor: "border-eros-gold/30"
+      borderColor: "border-eros-gold/30",
+      href: "/businesses/financial-services"
     },
     {
-      title: "Sales & Marketing Execution",
-      desc: "Combining creativity, data-backed insights, and cutting-edge tools to design direct marketing solutions that deliver measurable revenue growth.",
-      icon: TrendingUp,
-      color: "text-eros-pink",
-      bgColor: "bg-eros-pink/10",
-      borderColor: "border-eros-pink/30"
-    },
-    {
-      title: "Service & Management Development",
-      desc: "Empowering our 50+ member team with structured mentorship, leadership training, and operational management skills.",
-      icon: Award,
+      title: "Sales NGO & Donor Acquisition",
+      desc: "Connecting non-profits and global charities with long-term recurring donors through passionate multi-channel public awareness campaigns.",
+      icon: Heart,
       color: "text-eros-bright",
       bgColor: "bg-eros-bright/10",
-      borderColor: "border-eros-bright/30"
+      borderColor: "border-eros-bright/30",
+      href: "/businesses/sales-ngo"
+    },
+    {
+      title: "B2B Commercial Sales & Expansion",
+      desc: "Empowering enterprise brands to expand their corporate sales pipelines, vendor networks, and high-value account acquisitions.",
+      icon: Briefcase,
+      color: "text-eros-pink",
+      bgColor: "bg-eros-pink/10",
+      borderColor: "border-eros-pink/30",
+      href: "/businesses/b2b-commercial"
     }
   ];
 
@@ -52,26 +56,33 @@ export default function Capabilities() {
         
         <div className="max-w-7xl mx-auto px-6 relative">
             <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">What We Offer</h2>
-                <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Our Core Capabilities</h1>
+                <span className="text-xs font-bold uppercase tracking-widest text-eros-cyan">What We Offer</span>
+                <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-6">Our 4 Core Business Divisions</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    Eros Inc. provides end-to-end direct marketing, brand acquisition, and leadership training programs designed to drive tangible business expansion.
+                    Eros Inc. provides specialized omnichannel sales, spatial VR publishing, financial distribution, and non-profit donor acquisition solutions designed to drive tangible business expansion.
                 </p>
             </div>
 
-            {/* Grid of Capabilities */}
+            {/* Grid of Business Divisions */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-                {capabilitiesList.map((cap, idx) => {
-                  const IconComp = cap.icon;
+                {businessDivisions.map((bus, idx) => {
+                  const IconComp = bus.icon;
                   return (
-                    <div key={idx} className="bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border p-8 rounded-3xl bento-glow shadow-lg transition">
-                        <div className={`w-14 h-14 rounded-2xl ${cap.bgColor} ${cap.borderColor} border ${cap.color} flex items-center justify-center mb-6`}>
-                            <IconComp className="w-7 h-7"/>
+                    <div key={idx} className="bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border p-8 rounded-3xl bento-glow shadow-lg transition flex flex-col justify-between group">
+                        <div>
+                          <div className={`w-14 h-14 rounded-2xl ${bus.bgColor} ${bus.borderColor} border ${bus.color} flex items-center justify-center mb-6`}>
+                              <IconComp className="w-7 h-7"/>
+                          </div>
+                          <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-eros-cyan transition">{bus.title}</h3>
+                          <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
+                              {bus.desc}
+                          </p>
                         </div>
-                        <h3 className="font-heading text-2xl font-bold text-slate-900 dark:text-white mb-3">{cap.title}</h3>
-                        <p className="text-slate-600 dark:text-slate-400 leading-relaxed mb-6">
-                            {cap.desc}
-                        </p>
+                        <div>
+                          <Link href={bus.href} className="inline-flex items-center gap-2 text-sm font-bold text-eros-cyan hover:text-eros-bright transition">
+                            Explore Catalogue <ArrowRight className="w-4 h-4" />
+                          </Link>
+                        </div>
                     </div>
                   );
                 })}
@@ -90,7 +101,7 @@ export default function Capabilities() {
                     ))}
                 </div>
                 <div className="mt-8 text-right">
-                    <Link href="/contact" className="inline-block px-8 py-3.5 rounded-full bg-eros-cyan text-slate-950 font-bold text-sm hover:bg-eros-bright transition">
+                    <Link href="/contact" className="inline-block px-8 py-3.5 rounded-full bg-eros-cyan text-slate-950 font-bold text-sm hover:bg-eros-bright transition uppercase tracking-wider">
                         Partner With Us
                     </Link>
                 </div>
