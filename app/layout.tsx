@@ -1,12 +1,80 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#090d16' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
-  title: "Eros Inc. | Compete With Compassion",
-  description: "Ethical Sales Scale. Compete With Compassion.",
+  metadataBase: new URL('https://erosinc.in'),
+  title: {
+    default: "Eros Inc. | Omnichannel Sales Execution & Brand Growth",
+    template: "%s | Eros Inc."
+  },
+  description: "Eros Inc. scales direct sales, customer acquisition, and brand partnerships with ethical integrity. Compete With Compassion.",
+  keywords: [
+    "Eros Inc",
+    "Omnichannel Sales Execution",
+    "Direct Customer Acquisition",
+    "Google 360 Publishing",
+    "Financial Services Distribution",
+    "Sales NGO",
+    "B2B Commercial Sales",
+    "Thane West Marketing Agency"
+  ],
+  authors: [{ name: "Eros Inc." }],
+  creator: "Eros Inc.",
+  publisher: "Eros Inc.",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: 'https://erosinc.in',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://erosinc.in',
+    siteName: 'Eros Inc.',
+    title: 'Eros Inc. | Omnichannel Sales Execution & Brand Growth',
+    description: 'Scaling brand partnerships through ethical customer acquisition and direct market activation.',
+    images: [
+      {
+        url: '/gallery/new_event_03.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Eros Inc Team & Corporate Culture',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Eros Inc. | Omnichannel Sales Execution & Brand Growth',
+    description: 'Scaling brand partnerships through ethical customer acquisition and direct market activation.',
+    images: ['/gallery/new_event_03.jpg'],
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -14,6 +82,34 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png"
   }
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Eros Inc.',
+  image: 'https://erosinc.in/logo.png',
+  '@id': 'https://erosinc.in',
+  url: 'https://erosinc.in',
+  telephone: '+91 93244 83283',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '2nd Floor, 227-228, Wardhaman Industrial Estate, Gokul Nagar',
+    addressLocality: 'Thane West',
+    addressRegion: 'Maharashtra',
+    postalCode: '400601',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 19.2015,
+    longitude: 72.9781,
+  },
+  email: 'contact@erosinc.in',
+  sameAs: [
+    'https://github.com/erosinc-dev/erosinc-dev'
+  ],
+  description: 'Eros Inc. is a dynamic growth-driven company dedicated to helping businesses build meaningful connections through omnichannel sales execution and brand activation.',
 };
 
 export default function RootLayout({
@@ -30,12 +126,17 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </head>
       <body className="bg-slate-50 dark:bg-eros-bg text-slate-900 dark:text-slate-100 font-sans antialiased selection:bg-eros-cyan selection:text-white pt-28 md:pt-32 transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Header />
           {children}
           <Footer />
+          <CookieConsent />
           
           {/* WhatsApp Floater */}
           <a
