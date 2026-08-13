@@ -27,6 +27,7 @@ export default function Footer() {
                     <li><Link href="/gallery" className="hover:text-eros-cyan transition">Gallery</Link></li>
                     <li><Link href="/leadership" className="hover:text-eros-cyan transition">Leadership Lab</Link></li>
                     <li><Link href="/impact" className="hover:text-eros-cyan transition">Social Impact</Link></li>
+                    <li><Link href="/careers" className="hover:text-eros-cyan transition text-eros-gold">Careers & Resume Dropbox</Link></li>
                 </ul>
             </div>
 
@@ -36,8 +37,8 @@ export default function Footer() {
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
                     <strong>EROS INC.</strong><br/>
                     2nd Floor, 227-228, Wardhaman Industrial Estate,<br/>
-                    Gokul Nagar, Thane West - 400601,<br/>
-                    Maharashtra, India.
+                    Gokul Nagar, Thane West - 400601, Maharashtra, India.<br/>
+                    Email: <a href="mailto:hr@erosinc.in" className="text-eros-cyan dark:text-eros-bright font-semibold hover:underline">hr@erosinc.in</a>
                 </p>
                 <div className="pt-4 border-t border-slate-200 dark:border-eros-border/60 text-slate-400 text-xs">
                     &copy; {new Date().getFullYear()} Eros Inc. All rights reserved. Managed & Designed for Excellence.

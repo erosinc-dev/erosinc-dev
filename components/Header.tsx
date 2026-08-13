@@ -22,6 +22,7 @@ export default function Header() {
                 <Link href="/gallery" className="hover:text-eros-cyan transition font-semibold">Gallery</Link>
                 <Link href="/leadership" className="hover:text-eros-cyan transition font-semibold">Leadership</Link>
                 <Link href="/impact" className="hover:text-eros-cyan transition font-semibold">Impact</Link>
+                <Link href="/careers" className="hover:text-eros-cyan transition font-semibold text-eros-gold">Careers</Link>
                 <Link href="/news" className="hover:text-eros-cyan transition text-slate-900 dark:text-white font-semibold">News</Link>
             </nav>
 
