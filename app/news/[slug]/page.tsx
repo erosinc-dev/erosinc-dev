@@ -18,9 +18,9 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 <ArrowLeft className="w-4 h-4"/> Back to News
             </Link>
             <div className="text-eros-gold font-semibold text-sm mb-4">{postData.date}</div>
-            <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-8">{postData.title}</h1>
+            <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8">{postData.title}</h1>
             <img src={postData.image} alt={postData.title} className="w-full rounded-3xl mb-10 object-cover h-[400px]" />
-            <div className="prose prose-invert prose-cyan max-w-none text-slate-300" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+            <div className="prose prose-slate dark:prose-invert prose-cyan max-w-none text-slate-700 dark:text-slate-300" dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </div>
     </section>
   );
