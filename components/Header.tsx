@@ -7,25 +7,27 @@ import { ThemeToggle } from './ThemeToggle';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isBusinessesOpen, setIsBusinessesOpen] = useState(false);
 
-  const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Philosophy', href: '/philosophy' },
-    { name: 'Capabilities', href: '/capabilities' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Gallery', href: '/gallery' },
-    { name: 'Leadership', href: '/leadership' },
-    { name: 'Impact', href: '/impact' },
-    { name: 'Careers', href: '/careers', highlight: true },
-    { name: 'News', href: '/news' },
+  const aboutLinks = [
+    { name: 'Our Philosophy', href: '/philosophy' },
+    { name: 'Executive Leadership', href: '/leadership' },
+    { name: 'Practical Management Programme', href: '/management-programme' },
+    { name: 'Social Impact', href: '/impact' },
   ];
 
   const businessLinks = [
-    { name: 'Google 360', href: '/businesses/google-360' },
+    { name: 'Capabilities Overview', href: '/capabilities' },
+    { name: 'Google 360° Publishing', href: '/businesses/google-360' },
     { name: 'Financial Services', href: '/businesses/financial-services' },
     { name: 'Sales NGO', href: '/businesses/sales-ngo' },
-    { name: 'B2B Commercial', href: '/businesses/b2b-commercial' },
+    { name: 'B2B Commercial Sales', href: '/businesses/b2b-commercial' },
+    { name: 'Brand Partners', href: '/brand-partners' },
+  ];
+
+  const workLinks = [
+    { name: 'Projects & Portfolio', href: '/projects' },
+    { name: 'Culture & Gallery', href: '/gallery' },
+    { name: 'Latest News', href: '/news' },
   ];
 
   return (
@@ -40,32 +42,41 @@ export default function Header() {
                 />
             </Link>
             
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-slate-600 dark:text-slate-300">
-                {navLinks.slice(0, 3).map((link) => (
-                  <Link 
-                    key={link.name} 
-                    href={link.href} 
-                    className={`hover:text-eros-cyan transition font-semibold`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-                
-                {/* Dropdown for Businesses */}
+            {/* Desktop Navigation (Streamlined to 4 Dropdowns/Links + Careers + CTA) */}
+            <nav className="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-700 dark:text-slate-200">
+                <Link href="/" className="hover:text-eros-cyan transition">
+                  Home
+                </Link>
+
+                {/* About Dropdown */}
                 <div className="relative group">
-                    <button 
-                        className="flex items-center gap-1 hover:text-eros-cyan transition font-semibold"
-                        onClick={() => setIsBusinessesOpen(!isBusinessesOpen)}
-                    >
-                        Our Businesses <ChevronDown className="w-4 h-4" />
+                    <button className="flex items-center gap-1.5 hover:text-eros-cyan transition py-2">
+                        About Us <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-eros-cyan transition-transform group-hover:rotate-180" />
                     </button>
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2">
+                    <div className="absolute top-full left-0 mt-1 w-60 bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-3 px-1 space-y-1">
+                        {aboutLinks.map((item) => (
+                            <Link 
+                                key={item.name}
+                                href={item.href}
+                                className="block px-4 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-eros-cyan transition text-xs font-semibold"
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Our Businesses Dropdown */}
+                <div className="relative group">
+                    <button className="flex items-center gap-1.5 hover:text-eros-cyan transition py-2">
+                        Our Businesses <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-eros-cyan transition-transform group-hover:rotate-180" />
+                    </button>
+                    <div className="absolute top-full left-0 mt-1 w-64 bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-3 px-1 space-y-1">
                         {businessLinks.map((biz) => (
                             <Link 
                                 key={biz.name}
                                 href={biz.href}
-                                className="block px-4 py-2 hover:bg-slate-50 dark:hover:bg-slate-800 hover:text-eros-cyan transition text-sm"
+                                className="block px-4 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-eros-cyan transition text-xs font-semibold"
                             >
                                 {biz.name}
                             </Link>
@@ -73,21 +84,33 @@ export default function Header() {
                     </div>
                 </div>
 
-                {navLinks.slice(3).map((link) => (
-                  <Link 
-                    key={link.name} 
-                    href={link.href} 
-                    className={`hover:text-eros-cyan transition font-semibold ${link.highlight ? 'text-eros-gold' : ''}`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+                {/* Work & Culture Dropdown */}
+                <div className="relative group">
+                    <button className="flex items-center gap-1.5 hover:text-eros-cyan transition py-2">
+                        Work & Media <ChevronDown className="w-4 h-4 text-slate-400 group-hover:text-eros-cyan transition-transform group-hover:rotate-180" />
+                    </button>
+                    <div className="absolute top-full left-0 mt-1 w-56 bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-3 px-1 space-y-1">
+                        {workLinks.map((work) => (
+                            <Link 
+                                key={work.name}
+                                href={work.href}
+                                className="block px-4 py-2.5 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-eros-cyan transition text-xs font-semibold"
+                            >
+                                {work.name}
+                            </Link>
+                        ))}
+                    </div>
+                </div>
+
+                <Link href="/careers" className="text-eros-gold hover:text-eros-bright transition">
+                  Careers
+                </Link>
             </nav>
 
             <div className="flex items-center gap-3">
                 <ThemeToggle />
                 
-                <Link href="/contact" className="hidden sm:block px-6 py-3 rounded-full bg-eros-cyan hover:bg-eros-bright text-slate-950 font-extrabold text-sm transition-all transform hover:scale-105 shadow-lg shadow-eros-cyan/25 uppercase tracking-wider">
+                <Link href="/contact" className="hidden sm:block px-6 py-3 rounded-full bg-eros-cyan hover:bg-eros-bright text-slate-950 font-extrabold text-xs transition-all transform hover:scale-105 shadow-lg shadow-eros-cyan/25 uppercase tracking-wider">
                     Partner With Us
                 </Link>
 
@@ -95,60 +118,61 @@ export default function Header() {
                 <button
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle Navigation Menu"
-                    className="md:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-eros-card border border-slate-200 dark:border-eros-border text-slate-900 dark:text-white hover:text-eros-cyan transition-colors"
+                    className="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-eros-card border border-slate-200 dark:border-eros-border text-slate-900 dark:text-white hover:text-eros-cyan transition-colors"
                 >
                     {isOpen ? <X className="w-6 h-6 text-eros-cyan" /> : <Menu className="w-6 h-6" />}
                 </button>
             </div>
         </div>
 
-        {/* Mobile Slide-Down Menu Overlay */}
+        {/* Mobile Slide-Down Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 dark:bg-eros-bg/95 backdrop-blur-xl border-b border-slate-200 dark:border-eros-border shadow-2xl transition-all duration-300 animate-in slide-in-from-top duration-300 max-h-[80vh] overflow-y-auto">
-              <div className="max-w-7xl mx-auto px-6 py-6 space-y-4">
-                  <nav className="flex flex-col space-y-2">
-                      {navLinks.slice(0, 3).map((link) => (
-                        <Link
-                          key={link.name}
-                          href={link.href}
-                          onClick={() => setIsOpen(false)}
-                          className={`text-lg font-semibold px-4 py-2.5 rounded-xl transition-colors text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-eros-card hover:text-eros-cyan`}
-                        >
-                          {link.name}
-                        </Link>
-                      ))}
+          <div className="lg:hidden bg-white/95 dark:bg-eros-bg/95 backdrop-blur-xl border-b border-slate-200 dark:border-eros-border shadow-2xl transition-all duration-300 max-h-[85vh] overflow-y-auto">
+              <div className="max-w-7xl mx-auto px-6 py-6 space-y-6">
+                  <nav className="flex flex-col space-y-4">
+                      <Link href="/" onClick={() => setIsOpen(false)} className="text-lg font-bold text-slate-900 dark:text-white hover:text-eros-cyan">
+                        Home
+                      </Link>
 
-                      {/* Mobile Businesses Section */}
-                      <div className="px-4 py-2.5">
-                          <span className="text-sm font-bold text-eros-gold uppercase tracking-widest mb-2 block">Our Businesses</span>
-                          <div className="flex flex-col space-y-2 pl-4 border-l-2 border-slate-200 dark:border-eros-border">
+                      {/* Mobile About Us */}
+                      <div>
+                          <span className="text-xs font-extrabold text-eros-cyan uppercase tracking-widest block mb-2">About Us</span>
+                          <div className="pl-3 border-l-2 border-slate-200 dark:border-eros-border space-y-2">
+                              {aboutLinks.map((item) => (
+                                  <Link key={item.name} href={item.href} onClick={() => setIsOpen(false)} className="block text-slate-700 dark:text-slate-300 hover:text-eros-cyan text-sm font-medium">
+                                      {item.name}
+                                  </Link>
+                              ))}
+                          </div>
+                      </div>
+
+                      {/* Mobile Businesses */}
+                      <div>
+                          <span className="text-xs font-extrabold text-eros-gold uppercase tracking-widest block mb-2">Our Businesses</span>
+                          <div className="pl-3 border-l-2 border-slate-200 dark:border-eros-border space-y-2">
                               {businessLinks.map((biz) => (
-                                  <Link
-                                      key={biz.name}
-                                      href={biz.href}
-                                      onClick={() => setIsOpen(false)}
-                                      className="text-md font-semibold text-slate-600 dark:text-slate-400 hover:text-eros-cyan py-1"
-                                  >
+                                  <Link key={biz.name} href={biz.href} onClick={() => setIsOpen(false)} className="block text-slate-700 dark:text-slate-300 hover:text-eros-cyan text-sm font-medium">
                                       {biz.name}
                                   </Link>
                               ))}
                           </div>
                       </div>
 
-                      {navLinks.slice(3).map((link) => (
-                        <Link
-                          key={link.name}
-                          href={link.href}
-                          onClick={() => setIsOpen(false)}
-                          className={`text-lg font-semibold px-4 py-2.5 rounded-xl transition-colors ${
-                            link.highlight 
-                              ? 'text-eros-gold bg-eros-gold/10 border border-eros-gold/20' 
-                              : 'text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-eros-card hover:text-eros-cyan'
-                          }`}
-                        >
-                          {link.name}
-                        </Link>
-                      ))}
+                      {/* Mobile Work & Media */}
+                      <div>
+                          <span className="text-xs font-extrabold text-eros-pink uppercase tracking-widest block mb-2">Work & Media</span>
+                          <div className="pl-3 border-l-2 border-slate-200 dark:border-eros-border space-y-2">
+                              {workLinks.map((work) => (
+                                  <Link key={work.name} href={work.href} onClick={() => setIsOpen(false)} className="block text-slate-700 dark:text-slate-300 hover:text-eros-cyan text-sm font-medium">
+                                      {work.name}
+                                  </Link>
+                              ))}
+                          </div>
+                      </div>
+
+                      <Link href="/careers" onClick={() => setIsOpen(false)} className="text-lg font-bold text-eros-gold hover:text-eros-bright">
+                        Careers & Trainee Program
+                      </Link>
                   </nav>
 
                   <div className="pt-4 border-t border-slate-200 dark:border-eros-border/60">
