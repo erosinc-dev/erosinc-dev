@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import PageThemeWrapper from "@/components/PageThemeWrapper";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -149,6 +150,7 @@ export default function RootLayout({
             <Footer />
             <CookieConsent />
           </PageThemeWrapper>
+          <SpeedInsights />
           
           {/* WhatsApp Floater */}
           <a
