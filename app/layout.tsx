@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import PageThemeWrapper from "@/components/PageThemeWrapper";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const viewport: Viewport = {
@@ -132,10 +133,12 @@ export default function RootLayout({
       </head>
       <body className="bg-slate-50 dark:bg-eros-bg text-slate-900 dark:text-slate-100 font-sans antialiased selection:bg-eros-cyan selection:text-white pt-28 md:pt-32 transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          <Header />
-          {children}
-          <Footer />
-          <CookieConsent />
+          <PageThemeWrapper>
+            <Header />
+            {children}
+            <Footer />
+            <CookieConsent />
+          </PageThemeWrapper>
           
           {/* WhatsApp Floater */}
           <a
