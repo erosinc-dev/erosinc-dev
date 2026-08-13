@@ -86,7 +86,7 @@ export default function Home() {
                           <img src="/team/sukhada_dalvi.jpg" alt="Sukhada Dalvi" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                       </div>
                       <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Sukhada Dalvi</h3>
-                      <p className="text-xs font-semibold text-eros-gold uppercase tracking-wider mt-1">Ex. Crew Leader</p>
+                      <p className="text-xs font-semibold text-eros-gold uppercase tracking-wider mt-1">Executive Crew Leader</p>
                   </div>
                   {/* Vishakh Satyan */}
                   <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">

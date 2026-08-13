@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Leadership() {
   const teamMembers = [
     { name: "Jeevan Munde", role: "Founder & MD, Eros Inc.", img: "/team/jeevan_munde.jpg", color: "text-eros-cyan", borderColor: "group-hover:border-eros-cyan" },
-    { name: "Sukhada Dalvi", role: "Ex. Crew Leader", img: "/team/sukhada_dalvi.jpg", color: "text-eros-gold", borderColor: "group-hover:border-eros-gold" },
+    { name: "Sukhada Dalvi", role: "Executive Crew Leader", img: "/team/sukhada_dalvi.jpg", color: "text-eros-gold", borderColor: "group-hover:border-eros-gold" },
     { name: "Vishakh Satyan", role: "Trainer", img: "/team/vishakh_satyan.jpg", color: "text-eros-pink", borderColor: "group-hover:border-eros-pink" },
     { name: "Ashish Mane", role: "Trainer", img: "/team/ashish_mane.jpg", color: "text-eros-bright", borderColor: "group-hover:border-eros-bright" },
     { name: "Sairaj Jopale", role: "Crew Leader", img: "/team/sairaj_jopale.jpg", color: "text-eros-cyan", borderColor: "group-hover:border-eros-cyan" },
