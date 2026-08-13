@@ -7,8 +7,8 @@ export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 3);
 
   const galleryPreview = [
-    '/gallery/pure_group_01.jpg', '/gallery/pure_group_02.jpg', '/gallery/pure_group_03.jpg',
-    '/gallery/pure_group_04.jpg', '/gallery/pure_group_05.jpg', '/gallery/pure_group_06.jpg',
+    '/gallery/pure_group_09.jpg', '/gallery/pure_group_10.jpg', '/gallery/pure_group_11.jpg',
+    '/gallery/pure_group_04.jpg', '/gallery/pure_group_07.jpg', '/gallery/pure_group_08.jpg',
   ];
 
   return (
@@ -60,61 +60,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-24 border-t border-slate-200 dark:border-eros-border relative overflow-hidden">
-          <div className="orb-3 absolute top-0 right-0 w-[300px] h-[300px] bg-eros-cyan/5 rounded-full blur-[80px] pointer-events-none"></div>
-          <div className="max-w-7xl mx-auto px-6 relative">
-              <div className="text-center mb-16">
-                  <h2 className="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">Leadership</h2>
-                  <p className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">Meet The Team</p>
-                  <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                      We don&apos;t just build campaigns — we build lasting relationships, create opportunities, and inspire growth with passion and integrity.
-                  </p>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-                  {/* Jeevan Munde */}
-                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
-                          <img src="/team/jeevan_munde.jpg" alt="Jeevan Munde" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Jeevan Munde</h3>
-                      <p className="text-xs font-semibold text-eros-cyan uppercase tracking-wider mt-1">Founder & MD</p>
-                  </div>
-                  {/* Sukhada Dalvi */}
-                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-gold transition-colors">
-                          <img src="/team/sukhada_dalvi.jpg" alt="Sukhada Dalvi" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Sukhada Dalvi</h3>
-                      <p className="text-xs font-semibold text-eros-gold uppercase tracking-wider mt-1">Executive Crew Leader</p>
-                  </div>
-                  {/* Vishakh Satyan */}
-                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-pink transition-colors">
-                          <img src="/team/vishakh_satyan.jpg" alt="Vishakh Satyan" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Vishakh Satyan</h3>
-                      <p className="text-xs font-semibold text-eros-pink uppercase tracking-wider mt-1">Trainer</p>
-                  </div>
-                  {/* Ashish Mane */}
-                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-bright transition-colors">
-                          <img src="/team/ashish_mane.jpg" alt="Ashish Mane" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Ashish Mane</h3>
-                      <p className="text-xs font-semibold text-eros-bright uppercase tracking-wider mt-1">Trainer</p>
-                  </div>
-                  {/* Sairaj Jopale */}
-                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
-                          <img src="/team/sairaj_jopale.jpg" alt="Sairaj Jopale" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
-                      </div>
-                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Sairaj Jopale</h3>
-                      <p className="text-xs font-semibold text-eros-cyan uppercase tracking-wider mt-1">Crew Leader</p>
-                  </div>
-              </div>
-          </div>
-      </section>
+
 
       {/* Gallery Preview */}
       <section className="py-24 bg-slate-100 dark:bg-black/40 border-t border-slate-200 dark:border-eros-border">

@@ -2,7 +2,7 @@
 title: "New Global NGO Partnership"
 date: "2026-08-01"
 excerpt: "We're taking our social impact campaigns to the next level with a massive global partnership."
-image: "/scraped/image_15.jpg"
+image: "/gallery/pure_group_08.jpg"
 ---
 
 # Making an Impact

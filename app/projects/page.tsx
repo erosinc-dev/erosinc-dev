@@ -5,7 +5,7 @@ export default function Projects() {
     {
       title: "Bollywood Movie Outreach & Promotions",
       category: "Entertainment",
-      img: "/scraped/image_08.jpg",
+      img: "/gallery/pure_group_04.jpg",
       icon: Film,
       color: "text-eros-pink",
       bgColor: "bg-eros-pink/10",
@@ -15,7 +15,7 @@ export default function Projects() {
     {
       title: "Credit Cards & Banking Network Growth",
       category: "Financial Services",
-      img: "/scraped/image_19.jpg",
+      img: "/gallery/pure_group_07.jpg",
       icon: CreditCard,
       color: "text-eros-gold",
       bgColor: "bg-eros-gold/10",
@@ -25,7 +25,7 @@ export default function Projects() {
     {
       title: "Google 360° Property Publishing",
       category: "Real Estate & Tech",
-      img: "/scraped/image_11.jpg",
+      img: "/gallery/pure_group_08.jpg",
       icon: View,
       color: "text-eros-cyan",
       bgColor: "bg-eros-cyan/10",
@@ -35,7 +35,7 @@ export default function Projects() {
     {
       title: "Social Impact & NGO Donor Onboarding",
       category: "Non-Profit",
-      img: "/scraped/image_15.jpg",
+      img: "/gallery/pure_group_09.jpg",
       icon: Globe2,
       color: "text-eros-bright",
       bgColor: "bg-eros-bright/10",

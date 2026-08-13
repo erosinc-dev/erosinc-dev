@@ -23,9 +23,15 @@ export default function Footer() {
                     <li><Link href="/" className="hover:text-eros-cyan transition">Home</Link></li>
                     <li><Link href="/philosophy" className="hover:text-eros-cyan transition">About Us / Philosophy</Link></li>
                     <li><Link href="/capabilities" className="hover:text-eros-cyan transition">Capabilities / What We Offer</Link></li>
+                    <li><Link href="/brand-partners" className="hover:text-eros-cyan transition">Brand Partners</Link></li>
                     <li><Link href="/projects" className="hover:text-eros-cyan transition">Projects & Portfolio</Link></li>
                     <li><Link href="/gallery" className="hover:text-eros-cyan transition">Gallery</Link></li>
+                    <li><Link href="/businesses/google-360" className="hover:text-eros-cyan transition text-eros-gold">Business: Google 360</Link></li>
+                    <li><Link href="/businesses/financial-services" className="hover:text-eros-cyan transition text-eros-gold">Business: Financial Services</Link></li>
+                    <li><Link href="/businesses/sales-ngo" className="hover:text-eros-cyan transition text-eros-gold">Business: Sales NGO</Link></li>
+                    <li><Link href="/businesses/b2b-commercial" className="hover:text-eros-cyan transition text-eros-gold">Business: B2B Commercial</Link></li>
                     <li><Link href="/leadership" className="hover:text-eros-cyan transition">Leadership Lab</Link></li>
+                    <li><Link href="/management-programme" className="hover:text-eros-cyan transition">Practical Management Programme</Link></li>
                     <li><Link href="/impact" className="hover:text-eros-cyan transition">Social Impact</Link></li>
                     <li><Link href="/careers" className="hover:text-eros-cyan transition text-eros-gold">Careers & Resume Dropbox</Link></li>
                 </ul>
@@ -37,9 +43,16 @@ export default function Footer() {
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
                     <strong>EROS INC.</strong><br/>
                     2nd Floor, 227-228, Wardhaman Industrial Estate,<br/>
-                    Gokul Nagar, Thane West - 400601, Maharashtra, India.<br/>
-                    Email: <a href="mailto:hr@erosinc.in" className="text-eros-cyan dark:text-eros-bright font-semibold hover:underline">hr@erosinc.in</a>
+                    Gokul Nagar, Thane West - 400601, Maharashtra, India.
                 </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-400">
+                    <div>General: <a href="mailto:contact@erosinc.in" className="text-eros-cyan font-semibold hover:underline">contact@erosinc.in</a></div>
+                    <div>Partnerships: <a href="mailto:partnership@erosinc.in" className="text-eros-gold font-semibold hover:underline">partnership@erosinc.in</a></div>
+                    <div>Careers / HR: <a href="mailto:hr@erosinc.in" className="text-eros-bright font-semibold hover:underline">hr@erosinc.in</a></div>
+                    <div>Training: <a href="mailto:hello@erosinc.in" className="text-eros-pink font-semibold hover:underline">hello@erosinc.in</a></div>
+                    <div>Info: <a href="mailto:info@erosinc.in" className="text-eros-cyan font-semibold hover:underline">info@erosinc.in</a></div>
+                    <div>Support: <a href="mailto:support@erosinc.in" className="text-slate-900 dark:text-white font-semibold hover:underline">support@erosinc.in</a></div>
+                </div>
                 <div className="pt-4 border-t border-slate-200 dark:border-eros-border/60 text-slate-400 text-xs">
                     &copy; {new Date().getFullYear()} Eros Inc. All rights reserved. Managed & Designed for Excellence.
                 </div>

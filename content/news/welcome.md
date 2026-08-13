@@ -2,7 +2,7 @@
 title: "Welcome to Eros Inc!"
 date: "2026-08-13"
 excerpt: "We're launching our brand new platform to scale ethical sales and compassion."
-image: "/gallery/pure_group_01.jpg"
+image: "/gallery/pure_group_09.jpg"
 ---
 
 # A New Era of Growth

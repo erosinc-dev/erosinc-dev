@@ -2,7 +2,7 @@
 title: "Leadership Lab Expansion"
 date: "2026-08-10"
 excerpt: "Our internal training program has successfully launched 5 new management teams this quarter."
-image: "/scraped/image_19.jpg"
+image: "/gallery/pure_group_06.jpg"
 ---
 
 # Expanding our Leadership Lab
