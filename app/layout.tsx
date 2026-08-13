@@ -18,18 +18,21 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://erosinc.in'),
   title: {
-    default: "Eros Inc. | Omnichannel Sales Execution & Brand Growth",
+    default: "Eros Inc. | Building Buzz. Scaling Brands. Compete With Compassion",
     template: "%s | Eros Inc."
   },
-  description: "Eros Inc. scales direct sales, customer acquisition, and brand partnerships with ethical integrity. Compete With Compassion.",
+  description: "Eros Inc. creates visibility, builds buzz, and scales enterprise brands across Film Promotions, Celebrity PR, Google 360° VR, Financial Services & B2B Commercial Sales.",
   keywords: [
     "Eros Inc",
-    "Omnichannel Sales Execution",
-    "Direct Customer Acquisition",
+    "Building Buzz Scaling Brands",
+    "Film Promotion & Celebrity PR",
+    "Celebrity PR Agency India",
+    "Movie Launch Campaigns",
+    "Press & Media Relations",
     "Google 360 Publishing",
     "Financial Services Distribution",
-    "Film Promotion & Celebrity PR",
     "B2B Commercial Sales",
+    "Omnichannel Sales Execution",
     "Thane West Marketing Agency"
   ],
   authors: [{ name: "Eros Inc." }],
@@ -59,21 +62,21 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://erosinc.in',
     siteName: 'Eros Inc.',
-    title: 'Eros Inc. | Omnichannel Sales Execution & Brand Growth',
-    description: 'Scaling brand partnerships through ethical customer acquisition and direct market activation.',
+    title: 'Eros Inc. | Building Buzz. Scaling Brands. Compete With Compassion',
+    description: 'Creating high-impact visibility and scaling brand partnerships across Film Promotions, Celebrity PR, Google 360°, Banking & B2B Sales.',
     images: [
       {
         url: '/gallery/new_event_03.jpg',
         width: 1200,
         height: 630,
-        alt: 'Eros Inc Team & Corporate Culture',
+        alt: 'Eros Inc - Building Buzz. Scaling Brands.',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Eros Inc. | Omnichannel Sales Execution & Brand Growth',
-    description: 'Scaling brand partnerships through ethical customer acquisition and direct market activation.',
+    title: 'Eros Inc. | Building Buzz. Scaling Brands. Compete With Compassion',
+    description: 'Creating high-impact visibility and scaling brand partnerships across Film Promotions, Celebrity PR, Google 360°, Banking & B2B Sales.',
     images: ['/gallery/new_event_03.jpg'],
   },
   icons: {
@@ -110,7 +113,13 @@ const jsonLd = {
   sameAs: [
     'https://github.com/erosinc-dev/erosinc-dev'
   ],
-  description: 'Eros Inc. is a dynamic growth-driven company dedicated to helping businesses build meaningful connections through omnichannel sales execution and brand activation.',
+  description: 'Eros Inc. is a dynamic growth-driven company dedicated to creating visibility, building buzz, and scaling brands across Film Promotion & Celebrity PR, Google 360° Publishing, Financial Services Distribution, and B2B Commercial Sales.',
+  makesOffer: [
+    { '@type': 'Offer', name: 'Film Promotion & Celebrity PR' },
+    { '@type': 'Offer', name: 'Google 360° VR Property Publishing' },
+    { '@type': 'Offer', name: 'Financial Services & Banking Growth' },
+    { '@type': 'Offer', name: 'B2B Commercial Sales Acceleration' }
+  ]
 };
 
 export default function RootLayout({

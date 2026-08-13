@@ -1,6 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import { Metadata } from 'next';
 import { Film, Sparkles, Megaphone, Star, Award, CheckCircle2, ArrowUpRight, Camera, Tv, Share2, Users } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: "Film Promotion & Celebrity PR Services",
+  description: "We create visibility, build buzz, and connect films and celebrities with the right audience. Film launches, celebrity PR, press relations, and red carpet events.",
+  keywords: ["Film Promotion", "Celebrity PR", "Movie Launches", "Media Relations", "Red Carpet Promotions", "Entertainment PR India"],
+};
 
 export default function FilmPromotionsPage() {
   const services = [
