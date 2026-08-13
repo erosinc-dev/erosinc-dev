@@ -1,4 +1,4 @@
-import { Users, Target, TrendingUp, Award, CheckCircle2, View, CreditCard, Heart, Briefcase, ArrowRight } from 'lucide-react';
+import { Users, Target, TrendingUp, Award, CheckCircle2, View, CreditCard, Film, Briefcase, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export default function Capabilities() {
@@ -22,12 +22,21 @@ export default function Capabilities() {
       href: "/businesses/financial-services"
     },
     {
-      title: "B2B Commercial Sales & Expansion",
-      desc: "Empowering enterprise brands to expand their corporate sales pipelines, vendor networks, and high-value account acquisitions.",
-      icon: Briefcase,
+      title: "Film Promotion & Celebrity PR",
+      desc: "We create visibility, build buzz, and connect films and celebrities with the right audience through strategic PR and press relations.",
+      icon: Film,
       color: "text-eros-pink",
       bgColor: "bg-eros-pink/10",
       borderColor: "border-eros-pink/30",
+      href: "/businesses/film-promotions"
+    },
+    {
+      title: "B2B Commercial Sales & Expansion",
+      desc: "Empowering enterprise brands to expand their corporate sales pipelines, vendor networks, and high-value account acquisitions.",
+      icon: Briefcase,
+      color: "text-eros-bright",
+      bgColor: "bg-eros-bright/10",
+      borderColor: "border-eros-bright/30",
       href: "/businesses/b2b-commercial"
     }
   ];

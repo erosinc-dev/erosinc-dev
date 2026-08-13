@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getSortedPostsData } from '@/lib/markdown';
-import { ArrowUpRight, Zap, Building2, CreditCard, HeartHandshake, Compass, Award, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Zap, Building2, CreditCard, Film, Compass, Award, CheckCircle2 } from 'lucide-react';
 import ThreeDBackground from '@/components/ThreeDBackground';
 
 export default function Home() {
@@ -34,6 +34,14 @@ export default function Home() {
       border: 'hover:border-eros-gold/50',
     },
     {
+      title: 'Film Promotion & Celebrity PR',
+      desc: 'Creating visibility, building buzz, and connecting movies & celebrities with the audience.',
+      href: '/businesses/film-promotions',
+      icon: Film,
+      color: 'text-eros-pink',
+      border: 'hover:border-eros-pink/50',
+    },
+    {
       title: 'B2B Commercial Sales',
       desc: 'Enterprise sales acceleration, B2B pipeline development, and channel partnership growth.',
       href: '/businesses/b2b-commercial',
@@ -54,7 +62,7 @@ export default function Home() {
                 <span className="font-semibold uppercase tracking-wider text-[11px] text-slate-600 dark:text-slate-300">Operational Excellence • 50+ Members Strong</span>
             </div>
             <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-4xl leading-[1.1] mb-6">
-                Ethical Sales Scale. <br/>
+                Building Buzz. Scaling Brands. <br/>
                 <span className="dynamic-title">Compete With Compassion.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
@@ -105,7 +113,7 @@ export default function Home() {
                   </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                   {businessDivisions.map((biz) => {
                       const Icon = biz.icon;
                       return (

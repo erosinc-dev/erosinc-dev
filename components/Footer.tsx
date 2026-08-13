@@ -28,6 +28,7 @@ export default function Footer() {
                     <li><Link href="/gallery" className="hover:text-eros-cyan transition">Gallery</Link></li>
                     <li><Link href="/businesses/google-360" className="hover:text-eros-cyan transition text-eros-gold">Business: Google 360</Link></li>
                     <li><Link href="/businesses/financial-services" className="hover:text-eros-cyan transition text-eros-gold">Business: Financial Services</Link></li>
+                    <li><Link href="/businesses/film-promotions" className="hover:text-eros-cyan transition text-eros-pink">Business: Film Promotion & PR</Link></li>
                     <li><Link href="/businesses/b2b-commercial" className="hover:text-eros-cyan transition text-eros-gold">Business: B2B Commercial</Link></li>
                     <li><Link href="/leadership" className="hover:text-eros-cyan transition">Executive Leadership</Link></li>
                     <li><Link href="/management-programme" className="hover:text-eros-cyan transition">Practical Management Programme</Link></li>

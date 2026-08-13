@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "Direct Customer Acquisition",
     "Google 360 Publishing",
     "Financial Services Distribution",
+    "Film Promotion & Celebrity PR",
     "B2B Commercial Sales",
     "Thane West Marketing Agency"
   ],

@@ -14,8 +14,8 @@
 ## 🏢 Business Divisions (3 Primary Catalogues)
 1. **Google 360° VR Property Publishing (`/businesses/google-360`):** HDR 360° virtual tours, Google Street View integration, and local SEO boosting.
 2. **Financial Services Distribution (`/businesses/financial-services`):** Retail banking growth, credit card acquisitions, and verified KYC compliance.
-3. **B2B Commercial Sales (`/businesses/b2b-commercial`):** Enterprise account acceleration, B2B sales negotiation, and channel partner expansion.
-*(Note: Sales NGO division was explicitly removed per directive).*
+3. **Film Promotion & Celebrity PR (`/businesses/film-promotions`):** Film launch campaigns, celebrity PR, media press relations, red carpet events, and brand endorsements.
+4. **B2B Commercial Sales (`/businesses/b2b-commercial`):** Enterprise account acceleration, B2B sales negotiation, and channel partner expansion.
 
 ---
 

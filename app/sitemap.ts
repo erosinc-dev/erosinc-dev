@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/capabilities',
     '/businesses/google-360',
     '/businesses/financial-services',
+    '/businesses/film-promotions',
     '/businesses/b2b-commercial',
     '/management-programme',
     '/leadership',
