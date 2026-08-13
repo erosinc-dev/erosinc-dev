@@ -29,7 +29,6 @@ export default function Gallery() {
     { src: '/gallery/pure_group_09.jpg', label: 'Annual Celebration Gathering' },
     { src: '/gallery/pure_group_10.jpg', label: 'Leadership Trainee Cohort' },
     { src: '/gallery/pure_group_11.jpg', label: 'High Performers Meet' },
-    { src: '/gallery/pure_group_14.jpg', label: 'National Leadership Summit' },
   ];
 
   // De-duplicate images if a static image is also in news
