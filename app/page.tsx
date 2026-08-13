@@ -20,7 +20,7 @@ export default function Home() {
                 <span className="text-gradient-cyan">Compete With Compassion.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
-                Eros Inc. is a premier brand acquisition and client servicing firm. Backed by a high-performance team of over 100 dedicated professionals, we build lasting human connections that acquire loyal customers and incubate the next generation of business leaders.
+                Eros Inc. is a dynamic, growth-driven company dedicated to helping businesses build meaningful connections with their customers. Driven by innovation, data-backed insights, and a customer-first approach, we empower businesses to grow with confidence in today’s competitive marketplace.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-20">
                 <Link href="/contact" className="px-8 py-4 rounded-xl bg-eros-cyan hover:bg-eros-bright text-slate-950 font-bold flex items-center justify-center gap-2 transition shadow-xl shadow-eros-cyan/20">
@@ -52,6 +52,53 @@ export default function Home() {
                 </div>
             </div>
         </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-24 border-t border-slate-200 dark:border-eros-border">
+          <div className="max-w-7xl mx-auto px-6">
+              <div className="text-center mb-16">
+                  <h2 className="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">Leadership</h2>
+                  <p className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">Meet The Team</p>
+                  <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                      Our experts don't just build campaigns—we build lasting relationships, create opportunities, and inspire growth with passion and integrity.
+                  </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                  {/* Placeholder 1 */}
+                  <div className="text-center group">
+                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
+                          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
+                      <p className="text-sm font-semibold text-eros-cyan uppercase tracking-wider mt-1">Chief Executive Officer</p>
+                  </div>
+                  {/* Placeholder 2 */}
+                  <div className="text-center group">
+                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-gold transition-colors">
+                          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
+                      <p className="text-sm font-semibold text-eros-gold uppercase tracking-wider mt-1">Chief Operations Officer</p>
+                  </div>
+                  {/* Placeholder 3 */}
+                  <div className="text-center group">
+                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-pink transition-colors">
+                          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
+                      <p className="text-sm font-semibold text-eros-pink uppercase tracking-wider mt-1">Head of Marketing</p>
+                  </div>
+                  {/* Placeholder 4 */}
+                  <div className="text-center group">
+                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-bright transition-colors">
+                          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                      </div>
+                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
+                      <p className="text-sm font-semibold text-eros-bright uppercase tracking-wider mt-1">Head of Client Relations</p>
+                  </div>
+              </div>
+          </div>
       </section>
 
       {/* News Section */}
