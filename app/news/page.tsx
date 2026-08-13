@@ -12,7 +12,7 @@ export default function NewsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {allPostsData.map(({ slug, date, title, excerpt, image }) => (
                     <Link href={`/news/${slug}`} key={slug} className="group bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-3xl overflow-hidden bento-glow shadow-md transition">
-                        <img src={image} alt={title} className="w-full h-48 object-cover group-hover:scale-105 transition duration-500"/>
+                        <img src={image} alt={title} className="w-full h-52 object-cover object-top group-hover:scale-105 transition duration-500"/>
                         <div className="p-6">
                             <div className="text-xs text-eros-cyan font-semibold mb-2">{date}</div>
                             <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-eros-cyan dark:group-hover:text-eros-bright transition">{title}</h3>
