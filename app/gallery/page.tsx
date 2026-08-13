@@ -1,5 +1,10 @@
 export default function Gallery() {
   const galleryItems = [
+    { src: '/certificates/cert_01.jpg', label: 'Foundation Program Certificate' },
+    { src: '/certificates/cert_02.jpg', label: 'Certificate of Appreciation' },
+    { src: '/certificates/cert_03.jpg', label: 'Recognition of Excellence' },
+    { src: '/certificates/cert_04.jpg', label: 'Leadership Advancement' },
+    { src: '/certificates/cert_05.jpg', label: 'Team Building & Performance' },
     { src: '/gallery/new_event_01.jpg', label: 'Executive Mentorship & Networking' },
     { src: '/gallery/new_event_02.jpg', label: 'Global Team Synergy' },
     { src: '/gallery/new_event_03.jpg', label: 'Strategic Planning Workshop' },
@@ -28,7 +33,7 @@ export default function Gallery() {
                 <span className="text-xs font-bold uppercase tracking-widest text-eros-gold">Team Moments & Culture</span>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-4">Our People & Culture</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    A 100% authentic glimpse into real team moments, leadership workshops, international networking, and training sessions at Eros Inc.
+                    A 100% authentic glimpse into real team moments, certified achievers, leadership workshops, international networking, and training sessions at Eros Inc.
                 </p>
             </div>
 
@@ -36,7 +41,7 @@ export default function Gallery() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {galleryItems.map((item, idx) => (
                   <div key={idx} className="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-eros-card border border-slate-200 dark:border-eros-border shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
-                      <img src={item.src} alt={item.label} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <img src={item.src} alt={item.label} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                           <span className="text-white font-medium text-xs tracking-wider uppercase bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/30">
                               {item.label}
