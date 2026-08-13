@@ -1,15 +1,21 @@
 import Link from 'next/link';
 import { getSortedPostsData } from '@/lib/markdown';
 import { ArrowUpRight, Zap } from 'lucide-react';
+import ThreeDBackground from '@/components/ThreeDBackground';
 
 export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 3);
 
+  const galleryPreview = [
+    '/scraped/image_15.jpg', '/scraped/image_19.jpg', '/scraped/image_08.jpg',
+    '/scraped/image_41.jpg', '/scraped/image_11.jpg', '/scraped/image_17.jpg',
+  ];
+
   return (
     <>
+      {/* Hero */}
       <section className="relative pt-20 pb-20 overflow-hidden">
-        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-eros-cyan/15 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute top-1/3 right-10 w-[300px] h-[300px] bg-eros-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <ThreeDBackground />
         <div className="max-w-7xl mx-auto px-6 relative">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border text-xs text-eros-cyan dark:text-eros-bright mb-8 shadow-sm dark:shadow-inner">
                 <span className="w-2 h-2 rounded-full bg-eros-pink animate-ping"></span>
@@ -17,10 +23,10 @@ export default function Home() {
             </div>
             <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-4xl leading-[1.1] mb-6">
                 Ethical Sales Scale. <br/>
-                <span className="text-gradient-cyan">Compete With Compassion.</span>
+                <span className="dynamic-title">Compete With Compassion.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
-                Eros Inc. is a dynamic, growth-driven company dedicated to helping businesses build meaningful connections with their customers. Driven by innovation, data-backed insights, and a customer-first approach, we empower businesses to grow with confidence in today’s competitive marketplace.
+                Eros Inc. is a dynamic, growth-driven company dedicated to helping businesses build meaningful connections with their customers. Driven by innovation, data-backed insights, and a customer-first approach, we create impactful campaigns that enhance brand visibility, foster trust, and deliver measurable results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-20">
                 <Link href="/contact" className="px-8 py-4 rounded-xl bg-eros-cyan hover:bg-eros-bright text-slate-950 font-bold flex items-center justify-center gap-2 transition shadow-xl shadow-eros-cyan/20">
@@ -55,44 +61,41 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 border-t border-slate-200 dark:border-eros-border">
-          <div className="max-w-7xl mx-auto px-6">
+      <section className="py-24 border-t border-slate-200 dark:border-eros-border relative overflow-hidden">
+          <div className="orb-3 absolute top-0 right-0 w-[300px] h-[300px] bg-eros-cyan/5 rounded-full blur-[80px] pointer-events-none"></div>
+          <div className="max-w-7xl mx-auto px-6 relative">
               <div className="text-center mb-16">
                   <h2 className="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">Leadership</h2>
                   <p className="font-heading text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">Meet The Team</p>
                   <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                      Our experts don't just build campaigns—we build lasting relationships, create opportunities, and inspire growth with passion and integrity.
+                      We don&apos;t just build campaigns — we build lasting relationships, create opportunities, and inspire growth with passion and integrity.
                   </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                  {/* Placeholder 1 */}
                   <div className="text-center group">
                       <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
-                          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                          <img src="/scraped/image_01.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                       </div>
                       <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
                       <p className="text-sm font-semibold text-eros-cyan uppercase tracking-wider mt-1">Chief Executive Officer</p>
                   </div>
-                  {/* Placeholder 2 */}
                   <div className="text-center group">
                       <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-gold transition-colors">
-                          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                          <img src="/scraped/image_04.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                       </div>
                       <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
                       <p className="text-sm font-semibold text-eros-gold uppercase tracking-wider mt-1">Chief Operations Officer</p>
                   </div>
-                  {/* Placeholder 3 */}
                   <div className="text-center group">
                       <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-pink transition-colors">
-                          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                          <img src="/scraped/image_05.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                       </div>
                       <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
                       <p className="text-sm font-semibold text-eros-pink uppercase tracking-wider mt-1">Head of Marketing</p>
                   </div>
-                  {/* Placeholder 4 */}
                   <div className="text-center group">
                       <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-bright transition-colors">
-                          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                          <img src="/scraped/image_06.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
                       </div>
                       <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
                       <p className="text-sm font-semibold text-eros-bright uppercase tracking-wider mt-1">Head of Client Relations</p>
@@ -101,8 +104,30 @@ export default function Home() {
           </div>
       </section>
 
-      {/* News Section */}
+      {/* Gallery Preview */}
       <section className="py-24 bg-slate-100 dark:bg-black/40 border-t border-slate-200 dark:border-eros-border">
+          <div className="max-w-7xl mx-auto px-6">
+              <div className="flex justify-between items-end mb-12">
+                  <div>
+                      <h2 className="text-xs font-bold uppercase tracking-widest text-eros-gold mb-2">Moments</h2>
+                      <p className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Gallery</p>
+                  </div>
+                  <Link href="/gallery" className="text-eros-cyan dark:text-eros-bright hover:text-eros-cyan/80 dark:hover:text-white transition font-medium flex items-center gap-1">
+                      View all <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {galleryPreview.map((src, idx) => (
+                      <Link href="/gallery" key={idx} className="gallery-item rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200 dark:border-eros-border">
+                          <img src={src} alt={`Gallery ${idx+1}`} className="w-full h-full object-cover"/>
+                      </Link>
+                  ))}
+              </div>
+          </div>
+      </section>
+
+      {/* News Section */}
+      <section className="py-24 border-t border-slate-200 dark:border-eros-border">
           <div className="max-w-7xl mx-auto px-6">
               <div className="flex justify-between items-end mb-12">
                   <div>

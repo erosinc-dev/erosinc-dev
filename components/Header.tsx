@@ -18,6 +18,7 @@ export default function Header() {
                 <Link href="/philosophy" className="hover:text-eros-cyan transition">Philosophy</Link>
                 <Link href="/capabilities" className="hover:text-eros-cyan transition">Capabilities</Link>
                 <Link href="/projects" className="hover:text-eros-cyan transition">Projects</Link>
+                <Link href="/gallery" className="hover:text-eros-cyan transition">Gallery</Link>
                 <Link href="/leadership" className="hover:text-eros-cyan transition">Leadership</Link>
                 <Link href="/impact" className="hover:text-eros-cyan transition">Impact</Link>
                 <Link href="/news" className="hover:text-eros-cyan transition text-slate-900 dark:text-white">News</Link>
