@@ -56,7 +56,7 @@ export default function Philosophy() {
                     <img src="/gallery/group_photo_01.jpg" alt="Eros Inc Team & Culture" className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8">
                         <div className="inline-flex items-center gap-2 px-3 py-1 bg-eros-cyan/20 backdrop-blur-md rounded-full text-eros-cyan text-xs font-semibold w-fit mb-2 border border-eros-cyan/30">
-                            <Sparkles className="w-3.5 h-3.5" /> 100+ Team Members Strong
+                            <Sparkles className="w-3.5 h-3.5" /> 50+ Team Members Strong
                         </div>
                         <h3 className="text-white font-heading font-bold text-xl">Operational Excellence & Strategic Brand Engagement</h3>
                     </div>

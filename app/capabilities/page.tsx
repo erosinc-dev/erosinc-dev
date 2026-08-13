@@ -29,7 +29,7 @@ export default function Capabilities() {
     },
     {
       title: "Service & Management Development",
-      desc: "Empowering our 100+ member team with structured mentorship, leadership training, and operational management skills.",
+      desc: "Empowering our 50+ member team with structured mentorship, leadership training, and operational management skills.",
       icon: Award,
       color: "text-eros-bright",
       bgColor: "bg-eros-bright/10",

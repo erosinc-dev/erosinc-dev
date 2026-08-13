@@ -19,7 +19,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 relative">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border text-xs text-eros-cyan dark:text-eros-bright mb-8 shadow-sm dark:shadow-inner">
                 <span className="w-2 h-2 rounded-full bg-eros-pink animate-ping"></span>
-                <span className="font-semibold uppercase tracking-wider text-[11px] text-slate-600 dark:text-slate-300">Operational Excellence • 100+ Members Strong</span>
+                <span className="font-semibold uppercase tracking-wider text-[11px] text-slate-600 dark:text-slate-300">Operational Excellence • 50+ Members Strong</span>
             </div>
             <h1 className="font-heading text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white max-w-4xl leading-[1.1] mb-6">
                 Ethical Sales Scale. <br/>
@@ -41,7 +41,7 @@ export default function Home() {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-slate-200 dark:border-eros-border">
                 <div className="bg-white dark:bg-eros-card/50 p-5 rounded-2xl border border-slate-200 dark:border-eros-border/50 shadow-sm">
-                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-eros-cyan mb-1">100+</h2>
+                    <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-eros-cyan mb-1">50+</h2>
                     <p className="text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider font-semibold">Dedicated Team Members</p>
                 </div>
                 <div className="bg-white dark:bg-eros-card/50 p-5 rounded-2xl border border-slate-200 dark:border-eros-border/50 shadow-sm">

@@ -54,7 +54,7 @@ export default function Projects() {
                 <span className="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">Portfolio & Experience</span>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-6">Proven Client Impact</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    With over 100 dedicated team members, Eros Inc. has delivered high-impact direct marketing solutions across entertainment, finance, real estate, and social causes.
+                    With over 50 dedicated team members, Eros Inc. has delivered high-impact direct marketing solutions across entertainment, finance, real estate, and social causes.
                 </p>
             </div>
 
