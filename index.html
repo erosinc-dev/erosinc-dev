@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eros Inc. | Compete With Compassion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        eros: {
+                            cyan: '#00A0D2',
+                            bright: '#00C3FF',
+                            bg: '#0B0E14',
+                            card: '#141A24',
+                            border: '#202938',
+                            gold: '#FFB800',
+                            pink: '#FF3366',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .bento-glow:hover {
+            box-shadow: 0 0 35px -5px rgba(0, 160, 210, 0.3);
+            border-color: #00A0D2;
+        }
+        .glass-header {
+            background: rgba(11, 14, 20, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #00C3FF 0%, #00A0D2 50%, #FFB800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-eros-bg text-slate-100 font-sans antialiased selection:bg-eros-cyan selection:text-white">
+
+    <!-- NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-header border-b border-eros-border/70">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- LOGO INTEGRATION -->
+            <a href="#" class="flex flex-col">
+                <div class="font-heading text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-lg bg-eros-cyan flex items-center justify-center text-white text-lg font-black shadow-lg shadow-eros-cyan/30">E</span>
+                    EROS <span class="text-eros-cyan">INC.</span>
+                </div>
+                <span class="text-[9px] font-bold tracking-[0.25em] text-slate-400 uppercase">Compete With Compassion</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-eros-cyan transition">Our Philosophy</a>
+                <a href="#capabilities" class="hover:text-eros-cyan transition">Capabilities</a>
+                <a href="#leadership" class="hover:text-eros-cyan transition">Leadership Lab</a>
+                <a href="#impact" class="hover:text-eros-cyan transition">Impact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="px-6 py-2.5 rounded-full bg-eros-cyan hover:bg-eros-bright text-slate-950 font-bold text-sm transition-all transform hover:scale-105 shadow-lg shadow-eros-cyan/25">
+                    Partner With Us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-40 pb-20 overflow-hidden">
+        <!-- Ambient Color Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-eros-cyan/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-eros-gold/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-eros-card border border-eros-border text-xs text-eros-bright mb-8 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-eros-pink animate-ping"></span>
+                <span class="font-semibold uppercase tracking-wider text-[11px] text-slate-300">Brand & Sales Acceleration</span>
+            </div>
+
+            <h1 class="font-heading text-5xl md:text-7xl font-extrabold tracking-tight text-white max-w-4xl leading-[1.1] mb-6">
+                Ethical Sales Scale. <br>
+                <span class="text-gradient-cyan">Compete With Compassion.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed">
+                At Eros Inc., we combine high-energy performance with deep empathy. We build lasting human connections that acquire loyal customers and incubate the next generation of business leaders.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 mb-20">
+                <a href="#contact" class="px-8 py-4 rounded-xl bg-eros-cyan hover:bg-eros-bright text-slate-950 font-bold flex items-center justify-center gap-2 transition shadow-xl shadow-eros-cyan/20">
+                    Scale Your Brand
+                    <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#leadership" class="px-8 py-4 rounded-xl bg-eros-card border border-eros-border text-white hover:bg-eros-border/60 font-semibold flex items-center justify-center gap-2 transition">
+                    Explore Career Trajectory
+                    <i data-lucide="zap" class="w-5 h-5 text-eros-gold"></i>
+                </a>
+            </div>
+
+            <!-- METRICS BAR WITH GOLD ACCENTS -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-eros-border">
+                <div class="bg-eros-card/50 p-5 rounded-2xl border border-eros-border/50">
+                    <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-eros-cyan mb-1">100k+</h2>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Direct Engagement</p>
+                </div>
+                <div class="bg-eros-card/50 p-5 rounded-2xl border border-eros-border/50">
+                    <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-eros-gold mb-1">100%</h2>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Internal Promotion</p>
+                </div>
+                <div class="bg-eros-card/50 p-5 rounded-2xl border border-eros-border/50">
+                    <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-white mb-1">3+</h2>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Core Industry Sectors</p>
+                </div>
+                <div class="bg-eros-card/50 p-5 rounded-2xl border border-eros-border/50">
+                    <h2 class="font-heading text-3xl md:text-4xl font-extrabold text-eros-bright mb-1">Zero</h2>
+                    <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Ad-Blocker Friction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENTO GRID (CAPABILITIES & PHILOSOPHY) -->
+    <section id="capabilities" class="py-24 bg-black/40 border-t border-eros-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-eros-cyan mb-2">Capabilities</h2>
+                    <p class="font-heading text-3xl md:text-4xl font-bold text-white">How We Drive Growth</p>
+                </div>
+                <p class="text-slate-400 max-w-md text-sm">Combining real-world face-to-face marketing with empathetic customer communication.</p>
+            </div>
+
+            <!-- Bento Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Large Card 1 -->
+                <div class="md:col-span-2 bg-eros-card border border-eros-border p-8 rounded-3xl transition duration-300 bento-glow relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-eros-cyan/10 border border-eros-cyan/30 text-eros-cyan flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-3">Direct Face-to-Face Representation</h3>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        In an automated digital world, human trust is the ultimate differentiator. Our brand ambassadors represent your products with passion, ethical standards, and direct empathy, acquiring lifetime customers.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-eros-border/60 text-xs text-eros-bright rounded-lg font-medium">Healthcare</span>
+                        <span class="px-3 py-1 bg-eros-border/60 text-xs text-eros-bright rounded-lg font-medium">Financial Services</span>
+                        <span class="px-3 py-1 bg-eros-border/60 text-xs text-eros-bright rounded-lg font-medium">Telecommunications</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Compassion Philosophy -->
+                <div class="bg-eros-card border border-eros-border p-8 rounded-3xl transition duration-300 bento-glow relative">
+                    <div class="w-12 h-12 rounded-2xl bg-eros-gold/10 border border-eros-gold/30 text-eros-gold flex items-center justify-center mb-6">
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Compassionate Competition</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        We believe winning should never come at the expense of ethics. We train teams to compete fiercely while serving customers and colleagues with empathy.
+                    </p>
+                </div>
+
+                <!-- Card 3: Leadership Program -->
+                <div class="bg-eros-card border border-eros-border p-8 rounded-3xl transition duration-300 bento-glow">
+                    <div class="w-12 h-12 rounded-2xl bg-eros-pink/10 border border-eros-pink/30 text-eros-pink flex items-center justify-center mb-6">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Merit-Based Growth</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        No seniority shortcuts. Every executive moves up based purely on output, leadership capability, and emotional intelligence.
+                    </p>
+                </div>
+
+                <!-- Card 4: NGO & Social Causes -->
+                <div class="md:col-span-2 bg-eros-card border border-eros-border p-8 rounded-3xl transition duration-300 bento-glow">
+                    <div class="w-12 h-12 rounded-2xl bg-eros-cyan/10 border border-eros-cyan/30 text-eros-cyan flex items-center justify-center mb-6">
+                        <i data-lucide="globe" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-3">Social Impact & NGO Campaigns</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        We champion causes that matter. Our campaigns connect non-profits directly with long-term donors, raising crucial funds and building community awareness through authentic conversations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <section id="contact" class="py-24 border-t border-eros-border relative">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-eros-gold">Get In Touch</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-extrabold text-white mt-2 mb-4">Start Your Growth Journey</h2>
+                <p class="text-slate-400">Partner with Eros Inc. to expand your market presence or accelerate your career.</p>
+            </div>
+
+            <form class="space-y-6 bg-eros-card p-8 md:p-10 rounded-3xl border border-eros-border shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Name</label>
+                        <input type="text" placeholder="Your full name" class="w-full bg-eros-bg border border-eros-border rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-eros-cyan transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email</label>
+                        <input type="email" placeholder="you@domain.com" class="w-full bg-eros-bg border border-eros-border rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-eros-cyan transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">I am interested in</label>
+                    <select class="w-full bg-eros-bg border border-eros-border rounded-xl px-4 py-3.5 text-slate-300 focus:outline-none focus:border-eros-cyan transition">
+                        <option>Hiring Eros Inc. for Brand / Sales Growth</option>
+                        <option>Joining the Trainee Leadership Program</option>
+                        <option>General Partnership</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Message</label>
+                    <textarea rows="4" placeholder="How can we help you?" class="w-full bg-eros-bg border border-eros-border rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-eros-cyan transition"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-eros-cyan hover:bg-eros-bright font-extrabold text-slate-950 transition shadow-lg shadow-eros-cyan/20 uppercase tracking-wider text-sm">
+                    Submit Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-eros-border text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <span class="font-heading font-extrabold text-white text-sm">EROS INC.</span>
+                <span>— Compete With Compassion</span>
+            </div>
+            <div>
+                &copy; 2026 Eros Inc. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
