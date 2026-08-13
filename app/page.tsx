@@ -34,14 +34,6 @@ export default function Home() {
       border: 'hover:border-eros-gold/50',
     },
     {
-      title: 'Sales NGO & Donor Acquisition',
-      desc: 'Sustainable monthly donor pipelines and outreach campaigns for global non-profits.',
-      href: '/businesses/sales-ngo',
-      icon: HeartHandshake,
-      color: 'text-eros-pink',
-      border: 'hover:border-eros-pink/50',
-    },
-    {
       title: 'B2B Commercial Sales',
       desc: 'Enterprise sales acceleration, B2B pipeline development, and channel partnership growth.',
       href: '/businesses/b2b-commercial',
@@ -113,7 +105,7 @@ export default function Home() {
                   </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {businessDivisions.map((biz) => {
                       const Icon = biz.icon;
                       return (

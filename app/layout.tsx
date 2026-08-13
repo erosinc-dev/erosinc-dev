@@ -27,7 +27,6 @@ export const metadata: Metadata = {
     "Direct Customer Acquisition",
     "Google 360 Publishing",
     "Financial Services Distribution",
-    "Sales NGO",
     "B2B Commercial Sales",
     "Thane West Marketing Agency"
   ],

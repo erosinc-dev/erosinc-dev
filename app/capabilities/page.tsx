@@ -22,15 +22,6 @@ export default function Capabilities() {
       href: "/businesses/financial-services"
     },
     {
-      title: "Sales NGO & Donor Acquisition",
-      desc: "Connecting non-profits and global charities with long-term recurring donors through passionate multi-channel public awareness campaigns.",
-      icon: Heart,
-      color: "text-eros-bright",
-      bgColor: "bg-eros-bright/10",
-      borderColor: "border-eros-bright/30",
-      href: "/businesses/sales-ngo"
-    },
-    {
       title: "B2B Commercial Sales & Expansion",
       desc: "Empowering enterprise brands to expand their corporate sales pipelines, vendor networks, and high-value account acquisitions.",
       icon: Briefcase,

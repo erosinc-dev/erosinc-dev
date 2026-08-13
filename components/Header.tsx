@@ -19,7 +19,6 @@ export default function Header() {
     { name: 'Capabilities Overview', href: '/capabilities' },
     { name: 'Google 360° Publishing', href: '/businesses/google-360' },
     { name: 'Financial Services', href: '/businesses/financial-services' },
-    { name: 'Sales NGO', href: '/businesses/sales-ngo' },
     { name: 'B2B Commercial Sales', href: '/businesses/b2b-commercial' },
     { name: 'Brand Partners', href: '/brand-partners' },
   ];
