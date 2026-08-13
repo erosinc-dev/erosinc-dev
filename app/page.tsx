@@ -71,34 +71,46 @@ export default function Home() {
                       We don&apos;t just build campaigns — we build lasting relationships, create opportunities, and inspire growth with passion and integrity.
                   </p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-                  <div className="text-center group">
-                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
-                          <img src="/scraped/image_01.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                  {/* Jeevan Munde */}
+                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
+                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
+                          <img src="/team/jeevan_munde.jpg" alt="Jeevan Munde" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                       </div>
-                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
-                      <p className="text-sm font-semibold text-eros-cyan uppercase tracking-wider mt-1">Chief Executive Officer</p>
+                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Jeevan Munde</h3>
+                      <p className="text-xs font-semibold text-eros-cyan uppercase tracking-wider mt-1">Founder & MD</p>
                   </div>
-                  <div className="text-center group">
-                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-gold transition-colors">
-                          <img src="/scraped/image_04.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                  {/* Sukhada Dalvi */}
+                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
+                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-gold transition-colors">
+                          <img src="/team/sukhada_dalvi.jpg" alt="Sukhada Dalvi" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                       </div>
-                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
-                      <p className="text-sm font-semibold text-eros-gold uppercase tracking-wider mt-1">Chief Operations Officer</p>
+                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Sukhada Dalvi</h3>
+                      <p className="text-xs font-semibold text-eros-gold uppercase tracking-wider mt-1">Ex. Crew Leader</p>
                   </div>
-                  <div className="text-center group">
-                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-pink transition-colors">
-                          <img src="/scraped/image_05.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                  {/* Vishakh Satyan */}
+                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
+                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-pink transition-colors">
+                          <img src="/team/vishakh_satyan.jpg" alt="Vishakh Satyan" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                       </div>
-                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
-                      <p className="text-sm font-semibold text-eros-pink uppercase tracking-wider mt-1">Head of Marketing</p>
+                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Vishakh Satyan</h3>
+                      <p className="text-xs font-semibold text-eros-pink uppercase tracking-wider mt-1">Trainer</p>
                   </div>
-                  <div className="text-center group">
-                      <div className="w-48 h-48 rounded-full bg-slate-200 dark:bg-eros-card mb-6 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-bright transition-colors">
-                          <img src="/scraped/image_06.jpg" alt="Team Member" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
+                  {/* Ashish Mane */}
+                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
+                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-bright transition-colors">
+                          <img src="/team/ashish_mane.jpg" alt="Ashish Mane" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                       </div>
-                      <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white">Placeholder Name</h3>
-                      <p className="text-sm font-semibold text-eros-bright uppercase tracking-wider mt-1">Head of Client Relations</p>
+                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Ashish Mane</h3>
+                      <p className="text-xs font-semibold text-eros-bright uppercase tracking-wider mt-1">Trainer</p>
+                  </div>
+                  {/* Sairaj Jopale */}
+                  <div className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
+                      <div className="w-36 h-36 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg group-hover:border-eros-cyan transition-colors">
+                          <img src="/team/sairaj_jopale.jpg" alt="Sairaj Jopale" className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
+                      </div>
+                      <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">Sairaj Jopale</h3>
+                      <p className="text-xs font-semibold text-eros-cyan uppercase tracking-wider mt-1">Crew Leader</p>
                   </div>
               </div>
           </div>
