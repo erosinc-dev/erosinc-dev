@@ -61,9 +61,32 @@ export default function ManagementProgramme() {
             <p className="text-slate-600 dark:text-slate-400 text-sm mt-2">Every step of your career trajectory at Eros Inc. is recognized with official certification.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {certImages.map((cert, idx) => (
+          {/* Top 3 Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+            {certImages.slice(0, 3).map((cert, idx) => (
               <div key={idx} className="group relative rounded-2xl overflow-hidden bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border shadow-lg hover:shadow-2xl transition duration-500">
+                <div className="aspect-[3/4] overflow-hidden">
+                  <img 
+                    src={cert.src} 
+                    alt={cert.alt} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent opacity-90 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-6">
+                  <div className="inline-flex items-center gap-2 text-eros-gold text-xs font-bold uppercase tracking-wider mb-1">
+                    <Award className="w-4 h-4" />
+                    <span>Certified Milestone</span>
+                  </div>
+                  <h3 className="font-heading text-white text-lg font-bold">{cert.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom 2 Cards (Centered) */}
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            {certImages.slice(3, 5).map((cert, idx) => (
+              <div key={idx} className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group relative rounded-2xl overflow-hidden bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border shadow-lg hover:shadow-2xl transition duration-500">
                 <div className="aspect-[3/4] overflow-hidden">
                   <img 
                     src={cert.src} 
