@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bento-glow:hover {
+    box-shadow: 0 0 35px -5px rgba(0, 160, 210, 0.3);
+    border-color: #00A0D2;
+  }
+  .glass-header {
+    background: rgba(11, 14, 20, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  .text-gradient-cyan {
+    background: linear-gradient(135deg, #00C3FF 0%, #00A0D2 50%, #FFB800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
