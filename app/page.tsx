@@ -1,14 +1,54 @@
 import Link from 'next/link';
 import { getSortedPostsData } from '@/lib/markdown';
-import { ArrowUpRight, Zap } from 'lucide-react';
+import { ArrowUpRight, Zap, Building2, CreditCard, HeartHandshake, Compass, Award, CheckCircle2 } from 'lucide-react';
 import ThreeDBackground from '@/components/ThreeDBackground';
 
 export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 3);
 
+  // 6 Widescreen landscape group photos with zero face cuts or side bars
   const galleryPreview = [
-    '/gallery/new_event_01.jpg', '/gallery/new_event_02.jpg', '/gallery/new_event_05.jpg',
-    '/gallery/pure_group_04.jpg', '/gallery/pure_group_07.jpg', '/gallery/pure_group_08.jpg',
+    '/gallery/new_event_03.jpg',
+    '/gallery/new_event_04.jpg',
+    '/gallery/pure_group_04.jpg',
+    '/gallery/pure_group_07.jpg',
+    '/gallery/pure_group_08.jpg',
+    '/gallery/pure_group_10.jpg',
+  ];
+
+  const businessDivisions = [
+    {
+      title: 'Google 360° Publishing',
+      desc: 'HDR 360° virtual tours & Google Maps property integration to boost local SEO.',
+      href: '/businesses/google-360',
+      icon: Compass,
+      color: 'text-eros-cyan',
+      border: 'hover:border-eros-cyan/50',
+    },
+    {
+      title: 'Financial Services Distribution',
+      desc: 'Direct banking network expansion, credit card acquisition, and KYC verified onboarding.',
+      href: '/businesses/financial-services',
+      icon: CreditCard,
+      color: 'text-eros-gold',
+      border: 'hover:border-eros-gold/50',
+    },
+    {
+      title: 'Sales NGO & Donor Acquisition',
+      desc: 'Sustainable monthly donor pipelines and outreach campaigns for global non-profits.',
+      href: '/businesses/sales-ngo',
+      icon: HeartHandshake,
+      color: 'text-eros-pink',
+      border: 'hover:border-eros-pink/50',
+    },
+    {
+      title: 'B2B Commercial Sales',
+      desc: 'Enterprise sales acceleration, B2B pipeline development, and channel partnership growth.',
+      href: '/businesses/b2b-commercial',
+      icon: Building2,
+      color: 'text-eros-bright',
+      border: 'hover:border-eros-bright/50',
+    },
   ];
 
   return (
@@ -60,7 +100,80 @@ export default function Home() {
         </div>
       </section>
 
+      {/* NEW SECTION 1: Our Core Business Divisions */}
+      <section className="py-20 bg-slate-50 dark:bg-eros-card/30 border-t border-slate-200 dark:border-eros-border">
+          <div className="max-w-7xl mx-auto px-6">
+              <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                  <div>
+                      <span className="text-xs font-bold uppercase tracking-widest text-eros-cyan block mb-2">Our Expertise</span>
+                      <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Core Business Divisions</h2>
+                  </div>
+                  <Link href="/capabilities" className="text-eros-cyan hover:text-eros-bright transition text-sm font-semibold flex items-center gap-1">
+                      View All Capabilities <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+              </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {businessDivisions.map((biz) => {
+                      const Icon = biz.icon;
+                      return (
+                          <Link 
+                              key={biz.title} 
+                              href={biz.href} 
+                              className={`group p-8 rounded-3xl bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border shadow-md hover:shadow-2xl transition duration-300 ${biz.border}`}
+                          >
+                              <div className={`p-4 rounded-2xl bg-slate-100 dark:bg-slate-800/80 w-fit mb-6 ${biz.color}`}>
+                                  <Icon className="w-7 h-7" />
+                              </div>
+                              <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-eros-cyan transition">
+                                  {biz.title}
+                              </h3>
+                              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                                  {biz.desc}
+                              </p>
+                              <div className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-eros-cyan group-hover:translate-x-1 transition">
+                                  Explore Catalogue <ArrowUpRight className="w-4 h-4" />
+                              </div>
+                          </Link>
+                      );
+                  })}
+              </div>
+          </div>
+      </section>
+
+      {/* NEW SECTION 2: Practical Management Programme Highlight */}
+      <section className="py-20 border-t border-slate-200 dark:border-eros-border relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gradient-to-br from-slate-900 to-slate-950 p-8 sm:p-12 rounded-3xl border border-slate-800 shadow-2xl text-white">
+                  <div className="space-y-6">
+                      <span className="text-xs font-bold uppercase tracking-widest text-eros-gold flex items-center gap-2">
+                          <Award className="w-4 h-4" /> Practical Training While You Work
+                      </span>
+                      <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                          Learn. Work. Grow. <br/>
+                          <span className="text-eros-cyan">30-Day Foundation Program</span>
+                      </h2>
+                      <p className="text-slate-300 text-base leading-relaxed">
+                          Our training program combines practical learning with on-the-job experience, helping you develop professional skills while working with real customers, brands, and business opportunities.
+                      </p>
+                      <div className="grid grid-cols-2 gap-3 text-xs font-semibold text-slate-300 pt-2">
+                          <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-eros-cyan" /> Smart Selling</div>
+                          <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-eros-cyan" /> Market Analysis</div>
+                          <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-eros-cyan" /> Public Speaking</div>
+                          <div className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-eros-cyan" /> Client Representation</div>
+                      </div>
+                      <div className="pt-4">
+                          <Link href="/management-programme" className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-eros-gold hover:bg-amber-400 text-slate-950 font-bold transition shadow-lg shadow-eros-gold/20">
+                              View Certified Achievers & Program Details <ArrowUpRight className="w-5 h-5" />
+                          </Link>
+                      </div>
+                  </div>
+                  <div className="relative rounded-2xl overflow-hidden aspect-[4/3] border border-slate-800 shadow-xl">
+                      <img src="/certificates/cert_01.jpg" alt="Practical Training Certification" className="w-full h-full object-cover object-top" />
+                  </div>
+              </div>
+          </div>
+      </section>
 
       {/* Gallery Preview */}
       <section className="py-24 bg-slate-100 dark:bg-black/40 border-t border-slate-200 dark:border-eros-border">
@@ -77,7 +190,7 @@ export default function Home() {
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {galleryPreview.map((src, idx) => (
                       <Link href="/gallery" key={idx} className="gallery-item rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200 dark:border-eros-border">
-                          <img src={src} alt={`Gallery ${idx+1}`} className="w-full h-full object-cover"/>
+                          <img src={src} alt={`Gallery ${idx+1}`} className="w-full h-full object-cover object-top"/>
                       </Link>
                   ))}
               </div>
