@@ -7,8 +7,8 @@ export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 3);
 
   const galleryPreview = [
-    '/gallery/human_photo_01.jpg', '/gallery/human_photo_02.jpg', '/gallery/human_photo_03.jpg',
-    '/gallery/human_photo_04.jpg', '/gallery/human_photo_05.jpg', '/gallery/human_photo_06.jpg',
+    '/gallery/group_photo_01.jpg', '/gallery/group_photo_02.jpg', '/gallery/group_photo_03.jpg',
+    '/gallery/group_photo_04.jpg', '/gallery/group_photo_05.jpg', '/gallery/group_photo_06.jpg',
   ];
 
   return (
@@ -26,7 +26,7 @@ export default function Home() {
                 <span className="dynamic-title">Compete With Compassion.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mb-10 leading-relaxed">
-                Eros Inc. is a dynamic, growth-driven company dedicated to helping businesses build meaningful connections with their customers. Driven by innovation, data-backed insights, and a customer-first approach, we create impactful campaigns that enhance brand visibility, foster trust, and deliver measurable results.
+                Eros Inc. is a dynamic growth-driven company dedicated to helping businesses build meaningful connections with their customers through innovative marketing solutions and strategic brand engagement. We believe every brand has a unique story, and our mission is to bring that story to life with creativity, precision, and purpose.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-20">
                 <Link href="/contact" className="px-8 py-4 rounded-xl bg-eros-cyan hover:bg-eros-bright text-slate-950 font-bold flex items-center justify-center gap-2 transition shadow-xl shadow-eros-cyan/20">

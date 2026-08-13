@@ -12,7 +12,7 @@ export default function Footer() {
                     className="h-10 w-auto object-contain logo-blend" 
                 />
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                    Eros Inc. is a dynamic growth-driven direct sales and marketing company. Operational excellence with 100+ members strong.
+                    Eros Inc. is a dynamic growth-driven company dedicated to helping businesses build meaningful connections with their customers.
                 </p>
             </div>
 
