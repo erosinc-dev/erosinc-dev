@@ -1,5 +1,17 @@
+import { getSortedPostsData } from '@/lib/markdown';
+
 export default function Gallery() {
-  const galleryItems = [
+  // Fetch posts from CMS/Markdown dynamically
+  const posts = getSortedPostsData();
+  const newsGalleryItems = posts
+    .filter(post => post.image)
+    .map(post => ({
+      src: post.image,
+      label: `News: ${post.title}`,
+      isNews: true
+    }));
+
+  const staticGalleryItems = [
     { src: '/certificates/cert_01.jpg', label: 'Foundation Program Certificate' },
     { src: '/certificates/cert_02.jpg', label: 'Certificate of Appreciation' },
     { src: '/certificates/cert_03.jpg', label: 'Recognition of Excellence' },
@@ -20,6 +32,12 @@ export default function Gallery() {
     { src: '/gallery/pure_group_14.jpg', label: 'National Leadership Summit' },
   ];
 
+  // De-duplicate images if a static image is also in news
+  const existingSrcs = new Set(newsGalleryItems.map(item => item.src));
+  const filteredStaticItems = staticGalleryItems.filter(item => !existingSrcs.has(item.src));
+
+  const allGalleryItems = [...newsGalleryItems, ...filteredStaticItems];
+
   return (
     <section className="py-24 relative overflow-hidden">
         {/* 3D Ambient Background Glows */}
@@ -33,13 +51,13 @@ export default function Gallery() {
                 <span className="text-xs font-bold uppercase tracking-widest text-eros-gold">Team Moments & Culture</span>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-4">Our People & Culture</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    A 100% authentic glimpse into real team moments, certified achievers, leadership workshops, international networking, and training sessions at Eros Inc.
+                    A 100% authentic glimpse into real team moments, certified achievers, CMS news updates, international networking, and training sessions at Eros Inc.
                 </p>
             </div>
 
             {/* Gallery Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {galleryItems.map((item, idx) => (
+                {allGalleryItems.map((item, idx) => (
                   <div key={idx} className="group relative rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 dark:bg-eros-card border border-slate-200 dark:border-eros-border shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
                       <img src={item.src} alt={item.label} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
