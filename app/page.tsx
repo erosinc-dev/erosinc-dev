@@ -7,8 +7,8 @@ export default function Home() {
   const allPostsData = getSortedPostsData().slice(0, 3);
 
   const galleryPreview = [
-    '/gallery/group_photo_01.jpg', '/gallery/group_photo_02.jpg', '/gallery/group_photo_03.jpg',
-    '/gallery/group_photo_04.jpg', '/gallery/group_photo_05.jpg', '/gallery/group_photo_06.jpg',
+    '/gallery/pure_group_01.jpg', '/gallery/pure_group_02.jpg', '/gallery/pure_group_03.jpg',
+    '/gallery/pure_group_04.jpg', '/gallery/pure_group_05.jpg', '/gallery/pure_group_06.jpg',
   ];
 
   return (
