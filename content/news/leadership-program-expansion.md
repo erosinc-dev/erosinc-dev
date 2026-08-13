@@ -1,11 +1,11 @@
 ---
-title: "Leadership Lab Expansion"
+title: "Leadership Program Expansion"
 date: "2026-08-10"
 excerpt: "Our internal training program has successfully launched 5 new management teams this quarter."
 image: "/gallery/pure_group_06.jpg"
 ---
 
-# Expanding our Leadership Lab
+# Expanding our Leadership Program
 
 We are incredibly proud to announce that our merit-based growth program has successfully incubated 5 new management teams this quarter alone!
 

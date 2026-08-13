@@ -14,7 +14,7 @@ export default function Leadership() {
     <section className="py-24 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 relative">
             <div className="text-center max-w-3xl mx-auto mb-16">
-                <h2 className="text-xs font-bold uppercase tracking-widest text-eros-pink mb-2">Leadership Lab</h2>
+                <h2 className="text-xs font-bold uppercase tracking-widest text-eros-pink mb-2">Executive Leadership</h2>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6">Meet Our Executive Team</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
                     Driven by passion, integrity, and a commitment to excellence. At Eros Inc., every executive moves up based purely on output, leadership capability, and emotional intelligence.

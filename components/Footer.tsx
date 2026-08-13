@@ -30,7 +30,7 @@ export default function Footer() {
                     <li><Link href="/businesses/financial-services" className="hover:text-eros-cyan transition text-eros-gold">Business: Financial Services</Link></li>
                     <li><Link href="/businesses/sales-ngo" className="hover:text-eros-cyan transition text-eros-gold">Business: Sales NGO</Link></li>
                     <li><Link href="/businesses/b2b-commercial" className="hover:text-eros-cyan transition text-eros-gold">Business: B2B Commercial</Link></li>
-                    <li><Link href="/leadership" className="hover:text-eros-cyan transition">Leadership Lab</Link></li>
+                    <li><Link href="/leadership" className="hover:text-eros-cyan transition">Executive Leadership</Link></li>
                     <li><Link href="/management-programme" className="hover:text-eros-cyan transition">Practical Management Programme</Link></li>
                     <li><Link href="/impact" className="hover:text-eros-cyan transition">Social Impact</Link></li>
                     <li><Link href="/careers" className="hover:text-eros-cyan transition text-eros-gold">Careers & Resume Dropbox</Link></li>
