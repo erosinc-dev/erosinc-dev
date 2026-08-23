@@ -12,6 +12,19 @@ export default function Gallery() {
     }));
 
   const staticGalleryItems = [
+    { src: '/film/celeb_11.jpg', label: 'Shah Rukh Khan - Movie Promotion Tour' },
+    { src: '/film/celeb_03.jpg', label: 'Sushant & Shraddha - Chhichhore Movie Launch' },
+    { src: '/film/celeb_14.jpg', label: 'Hrithik Roshan - Celebrity PR Meet' },
+    { src: '/film/celeb_05.jpg', label: 'Ranveer Singh - Brand Launch Campaign' },
+    { src: '/film/celeb_27.jpg', label: 'Ayushmann Khurrana - Press Interaction' },
+    { src: '/film/celeb_19.jpg', label: 'Kartik Aaryan - Entertainment PR' },
+    { src: '/film/celeb_31.jpg', label: 'Kangana Ranaut - Rangoon Movie Premiere' },
+    { src: '/film/celeb_28.jpg', label: 'Kiara Advani - Machine Movie Launch' },
+    { src: '/film/celeb_22.jpg', label: 'Sunny Deol - Ghayal Once Again PR Tour' },
+    { src: '/film/celeb_07.jpg', label: 'Jackie Shroff - Red Carpet Gala' },
+    { src: '/film/celeb_20.jpg', label: 'Jacqueline Fernandez - Media Activation' },
+    { src: '/film/celeb_25.jpg', label: 'Arjun Kapoor - Brand Campaign Event' },
+    { src: '/gallery/microsoft_summit.jpg', label: 'Microsoft Tech & Leadership Summit' },
     { src: '/certificates/cert_01.jpg', label: 'Foundation Program Certificate' },
     { src: '/certificates/cert_02.jpg', label: 'Certificate of Appreciation' },
     { src: '/certificates/cert_03.jpg', label: 'Recognition of Excellence' },
@@ -29,7 +42,6 @@ export default function Gallery() {
     { src: '/gallery/pure_group_09.jpg', label: 'Annual Celebration Gathering' },
     { src: '/gallery/pure_group_10.jpg', label: 'Leadership Trainee Cohort' },
     { src: '/gallery/pure_group_11.jpg', label: 'High Performers Meet' },
-    { src: '/gallery/microsoft_summit.jpg', label: 'Microsoft Tech & Leadership Summit' },
   ];
 
   // De-duplicate images if a static image is also in news
@@ -51,7 +63,7 @@ export default function Gallery() {
                 <span className="text-xs font-bold uppercase tracking-widest text-eros-gold">Team Moments & Culture</span>
                 <h1 className="font-heading text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mt-2 mb-4">Our People & Culture</h1>
                 <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-                    A 100% authentic glimpse into real team moments, certified achievers, CMS news updates, international networking, and training sessions at Eros Inc.
+                    A 100% authentic glimpse into real team moments, certified achievers, celebrity PR campaigns, international networking, and leadership training sessions at Eros Inc.
                 </p>
             </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Film, Sparkles, Megaphone, Star, Award, CheckCircle2, ArrowUpRight, Camera, Tv, Share2, Users } from 'lucide-react';
+import FilmGalleryShowcase from '@/components/FilmGalleryShowcase';
 
 export const metadata: Metadata = {
   title: "Film Promotion & Celebrity PR Services",
@@ -56,25 +57,25 @@ export default function FilmPromotionsPage() {
           </p>
         </div>
 
-        {/* High-Resolution Team & Campaign Photo */}
-        <div className="mb-20 rounded-3xl overflow-hidden border border-slate-200 dark:border-eros-border shadow-2xl relative aspect-[16/9] group">
+        {/* High-Resolution Marquee Banner */}
+        <div className="mb-20 rounded-3xl overflow-hidden border border-slate-200 dark:border-eros-border shadow-2xl relative aspect-[16/9] sm:aspect-[21/9] group bg-slate-950">
           <img 
-            src="/gallery/new_event_03.jpg" 
-            alt="Bollywood & Film Promotion Campaign" 
-            className="w-full h-full object-cover group-hover:scale-105 transition duration-500" 
+            src="/film/celeb_11.jpg" 
+            alt="Shah Rukh Khan & Bollywood Film Promotion Campaign" 
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700" 
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-end p-8 sm:p-12">
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/95 via-slate-950/40 to-transparent flex flex-col justify-end p-8 sm:p-12">
             <span className="text-eros-gold text-xs font-bold uppercase tracking-widest mb-2 flex items-center gap-2">
               <Film className="w-4 h-4" /> Bollywood & Entertainment Outreach
             </span>
-            <h2 className="text-white font-heading font-extrabold text-2xl sm:text-3xl max-w-2xl leading-snug">
+            <h2 className="text-white font-heading font-extrabold text-2xl sm:text-4xl max-w-3xl leading-snug">
               Creating High-Impact Visibility & Nationwide Media Engagement
             </h2>
           </div>
         </div>
 
         {/* Services Grid (10 Core Services) */}
-        <div className="mb-20">
+        <div className="mb-24">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-eros-pink block mb-2">Capabilities</span>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Our Promotional Services</h2>
@@ -99,6 +100,9 @@ export default function FilmPromotionsPage() {
             })}
           </div>
         </div>
+
+        {/* Celebrity PR & Film Campaign Interactive Gallery Showcase */}
+        <FilmGalleryShowcase />
 
         {/* Strategic Approach Section */}
         <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 text-white border border-slate-800 shadow-2xl mb-20">
