@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -28,14 +29,16 @@ export const metadata: Metadata = {
     "Film Promotion & Celebrity PR",
     "Celebrity PR Agency India",
     "Movie Launch Campaigns",
+    "Bollywood PR Agency",
     "Press & Media Relations",
     "Google 360 Publishing",
     "Financial Services Distribution",
     "B2B Commercial Sales",
     "Omnichannel Sales Execution",
-    "Thane West Marketing Agency"
+    "Thane West Marketing Agency",
+    "Eros Inc Thane"
   ],
-  authors: [{ name: "Eros Inc." }],
+  authors: [{ name: "Eros Inc.", url: "https://erosinc.in" }],
   creator: "Eros Inc.",
   publisher: "Eros Inc.",
   formatDetection: {
@@ -45,6 +48,13 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://erosinc.in',
+    languages: {
+      'en-IN': 'https://erosinc.in',
+      'en-US': 'https://erosinc.in',
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || 'google-site-verification-token',
   },
   robots: {
     index: true,
@@ -59,17 +69,17 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
+    locale: 'en_IN',
     url: 'https://erosinc.in',
     siteName: 'Eros Inc.',
     title: 'Eros Inc. | Building Buzz. Scaling Brands. Compete With Compassion',
     description: 'Creating high-impact visibility and scaling brand partnerships across Film Promotions, Celebrity PR, Google 360°, Banking & B2B Sales.',
     images: [
       {
-        url: '/gallery/new_event_03.jpg',
+        url: '/film/celeb_11.jpg',
         width: 1200,
         height: 630,
-        alt: 'Eros Inc - Building Buzz. Scaling Brands.',
+        alt: 'Eros Inc - Building Buzz. Scaling Brands. Bollywood & Enterprise PR.',
       },
     ],
   },
@@ -77,7 +87,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Eros Inc. | Building Buzz. Scaling Brands. Compete With Compassion',
     description: 'Creating high-impact visibility and scaling brand partnerships across Film Promotions, Celebrity PR, Google 360°, Banking & B2B Sales.',
-    images: ['/gallery/new_event_03.jpg'],
+    images: ['/film/celeb_11.jpg'],
+    creator: '@erosinc_in',
+    site: '@erosinc_in',
   },
   icons: {
     icon: [
@@ -90,37 +102,91 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Eros Inc.',
-  image: 'https://erosinc.in/logo.png',
-  '@id': 'https://erosinc.in',
-  url: 'https://erosinc.in',
-  telephone: '+91 93244 83283',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '2nd Floor, 227-228, Wardhaman Industrial Estate, Gokul Nagar',
-    addressLocality: 'Thane West',
-    addressRegion: 'Maharashtra',
-    postalCode: '400601',
-    addressCountry: 'IN',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 19.2015,
-    longitude: 72.9781,
-  },
-  email: 'contact@erosinc.in',
-  sameAs: [
-    'https://github.com/erosinc-dev/erosinc-dev'
-  ],
-  description: 'Eros Inc. is a dynamic growth-driven company dedicated to creating visibility, building buzz, and scaling brands across Film Promotion & Celebrity PR, Google 360° Publishing, Financial Services Distribution, and B2B Commercial Sales.',
-  makesOffer: [
-    { '@type': 'Offer', name: 'Film Promotion & Celebrity PR' },
-    { '@type': 'Offer', name: 'Google 360° VR Property Publishing' },
-    { '@type': 'Offer', name: 'Financial Services & Banking Growth' },
-    { '@type': 'Offer', name: 'B2B Commercial Sales Acceleration' }
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://erosinc.in/#organization',
+      name: 'Eros Inc.',
+      url: 'https://erosinc.in',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://erosinc.in/logo.png',
+        caption: 'Eros Inc. Logo'
+      },
+      image: 'https://erosinc.in/film/celeb_11.jpg',
+      description: 'Eros Inc. creates visibility, builds buzz, and scales brands across Film Promotion & Celebrity PR, Google 360° Publishing, Financial Services Distribution, and B2B Commercial Sales.',
+      email: 'contact@erosinc.in',
+      telephone: '+91 93244 83283',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '2nd Floor, 227-228, Wardhaman Industrial Estate, Gokul Nagar',
+        addressLocality: 'Thane West',
+        addressRegion: 'Maharashtra',
+        postalCode: '400601',
+        addressCountry: 'IN',
+      },
+      sameAs: [
+        'https://www.instagram.com/erosinc_in/',
+        'https://www.linkedin.com/company/erosinc/',
+        'https://www.facebook.com/share/gBQTSder7UXx9oec/',
+        'https://x.com/erosinc_in',
+        'https://wa.me/9324483283',
+        'https://github.com/erosinc-dev/erosinc-dev'
+      ]
+    },
+    {
+      '@type': 'LocalBusiness',
+      '@id': 'https://erosinc.in/#localbusiness',
+      name: 'Eros Inc.',
+      url: 'https://erosinc.in',
+      telephone: '+91 93244 83283',
+      email: 'contact@erosinc.in',
+      priceRange: '₹₹₹',
+      image: 'https://erosinc.in/logo.png',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '2nd Floor, 227-228, Wardhaman Industrial Estate, Gokul Nagar',
+        addressLocality: 'Thane West',
+        addressRegion: 'Maharashtra',
+        postalCode: '400601',
+        addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 19.2015,
+        longitude: 72.9781,
+      },
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          opens: '09:30',
+          closes: '18:30'
+        }
+      ],
+      makesOffer: [
+        { '@type': 'Offer', name: 'Film Promotion & Celebrity PR' },
+        { '@type': 'Offer', name: 'Google 360° VR Property Publishing' },
+        { '@type': 'Offer', name: 'Financial Services Distribution' },
+        { '@type': 'Offer', name: 'B2B Commercial Sales Acceleration' },
+        { '@type': 'Offer', name: 'Practical Management Programme' }
+      ]
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://erosinc.in/#website',
+      url: 'https://erosinc.in',
+      name: 'Eros Inc.',
+      description: 'Building Buzz. Scaling Brands. Compete With Compassion.',
+      publisher: {
+        '@id': 'https://erosinc.in/#organization'
+      },
+      inLanguage: 'en-US'
+    }
   ]
 };
+
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export default function RootLayout({
   children,
@@ -136,6 +202,33 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+        
+        {/* Google SiteKit / Search Console Verification */}
+        {process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && (
+          <meta name="google-site-verification" content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION} />
+        )}
+
+        {/* Google Analytics 4 (GA4) if Measurement ID is set */}
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}', {
+                  page_path: window.location.pathname,
+                });
+              `}
+            </Script>
+          </>
+        )}
+
+        {/* Structured Schema.org JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

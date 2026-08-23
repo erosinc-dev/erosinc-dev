@@ -16,36 +16,36 @@ const filmCampaigns: FilmPhoto[] = [
   { id: 11, src: '/film/celeb_11.jpg', title: 'Shah Rukh Khan', subtitle: 'Movie Promotional Tour & Media Interaction', category: 'Film Launches', featured: true },
   { id: 3, src: '/film/celeb_03.jpg', title: 'Sushant Singh Rajput & Shraddha Kapoor', subtitle: 'Chhichhore Theatrical Release & Press Meet', category: 'Film Launches', featured: true },
   { id: 14, src: '/film/celeb_14.jpg', title: 'Hrithik Roshan', subtitle: 'Celebrity PR & Exclusive Brand Session', category: 'Celebrity PR', featured: true },
+  { id: 32, src: '/film/celeb_32.jpg', title: 'Aamir Khan', subtitle: 'Dangal Theatrical Promotion & Exclusive Meet', category: 'Film Launches', featured: true },
   { id: 5, src: '/film/celeb_05.jpg', title: 'Ranveer Singh', subtitle: 'Jack & Jones Nationwide Campaign Launch', category: 'Red Carpet & Brand', featured: true },
   { id: 27, src: '/film/celeb_27.jpg', title: 'Ayushmann Khurrana', subtitle: 'Bollywood Hungama Media Interaction', category: 'Media & Press', featured: true },
-  { id: 19, src: '/film/celeb_19.jpg', title: 'Kartik Aaryan', subtitle: 'Film Promotion & Celebrity Engagement', category: 'Celebrity PR', featured: true },
+  { id: 19, src: '/film/celeb_19.jpg', title: 'Siddharth Malhotra', subtitle: 'Artist Personal PR & Media Outreach', category: 'Celebrity PR', featured: true },
+  { id: 25, src: '/film/celeb_25.jpg', title: 'Saif Ali Khan', subtitle: 'Brand Collaboration & Promotional Launch', category: 'Red Carpet & Brand', featured: true },
+  { id: 23, src: '/film/celeb_23.jpg', title: 'Shraddha Kapoor', subtitle: 'Baaghi Theatrical Promotion & Artist Press Meet', category: 'Film Launches', featured: true },
+  { id: 22, src: '/film/celeb_22.jpg', title: 'Tiger Shroff', subtitle: 'Baaghi Movie Campaign & Promotional Tour', category: 'Film Launches', featured: true },
   { id: 31, src: '/film/celeb_31.jpg', title: 'Kangana Ranaut', subtitle: 'Rangoon Movie Premiere & Press Release', category: 'Film Launches', featured: true },
   { id: 28, src: '/film/celeb_28.jpg', title: 'Kiara Advani & Mustafa', subtitle: 'Machine Movie Launch & Red Carpet Showcase', category: 'Film Launches', featured: true },
-  { id: 22, src: '/film/celeb_22.jpg', title: 'Sunny Deol', subtitle: 'Ghayal Once Again Nationwide PR Campaign', category: 'Film Launches', featured: true },
   { id: 7, src: '/film/celeb_07.jpg', title: 'Jackie Shroff', subtitle: 'Celebrity Gala & Red Carpet Activation', category: 'Red Carpet & Brand', featured: true },
   { id: 20, src: '/film/celeb_20.jpg', title: 'Jacqueline Fernandez', subtitle: 'NBT Mulaqaat Media & Press Activation', category: 'Media & Press', featured: true },
-  { id: 25, src: '/film/celeb_25.jpg', title: 'Arjun Kapoor', subtitle: 'Khatron Ke Khiladi & Tata Motors Campaign', category: 'Red Carpet & Brand', featured: true },
+  { id: 2, src: '/film/celeb_02.jpg', title: 'Sonakshi Sinha', subtitle: 'Akira Movie Launch & Media Interaction', category: 'Film Launches' },
   { id: 1, src: '/film/celeb_01.jpg', title: 'Divyenndu Sharma', subtitle: 'Artist Personal Branding & Interactive PR', category: 'Celebrity PR' },
   { id: 4, src: '/film/celeb_04.jpg', title: 'Randeep Hooda', subtitle: 'Actor PR & Promotional Session', category: 'Celebrity PR' },
   { id: 9, src: '/film/celeb_09.jpg', title: 'Harshvardhan Rane', subtitle: 'Sanam Teri Kasam Movie PR & Press Tour', category: 'Film Launches' },
   { id: 18, src: '/film/celeb_18.jpg', title: 'Kriti Kharbanda', subtitle: 'Celebrity Press Conference & Media Tour', category: 'Celebrity PR' },
   { id: 13, src: '/film/celeb_13.jpg', title: 'Hrithik Roshan', subtitle: 'Personal Brand Building & Artist Relation', category: 'Celebrity PR' },
-  { id: 6, src: '/film/celeb_06.jpg', title: 'Ranveer Singh', subtitle: 'High-Impact Brand Collaboration Event', category: 'Red Carpet & Brand' },
-  { id: 26, src: '/film/celeb_26.jpg', title: 'Ranveer Singh', subtitle: 'Brand Ambassador Launch & Media Coverage', category: 'Red Carpet & Brand' },
+  { id: 16, src: '/film/celeb_16.jpg', title: 'Charlotte Flair (WWE Superstar)', subtitle: 'Sony Ten WWE India Tour & Media Activation', category: 'Media & Press' },
+  { id: 17, src: '/film/celeb_17.jpg', title: 'Charlotte Flair (WWE Superstar)', subtitle: 'WWE India Campaign & Press Showcase', category: 'Media & Press' },
+  { id: 26, src: '/film/celeb_26.jpg', title: 'Siddharth Malhotra', subtitle: 'Brand Association & Media Feature Session', category: 'Celebrity PR' },
+  { id: 6, src: '/film/celeb_06.jpg', title: 'Gurmeet Choudhary', subtitle: 'Wajah Tum Ho Movie PR & Press Interaction', category: 'Film Launches' },
+  { id: 24, src: '/film/celeb_24.jpg', title: 'Shraddha Kapoor', subtitle: 'Baaghi Media Interview & Publicity Tour', category: 'Film Launches' },
   { id: 29, src: '/film/celeb_29.jpg', title: 'Kiara Advani', subtitle: 'Theatrical Launch & Artist Media Meet', category: 'Film Launches' },
   { id: 30, src: '/film/celeb_30.jpg', title: 'Kiara Advani & Cast', subtitle: 'Film Promotion & Press Relations', category: 'Film Launches' },
-  { id: 23, src: '/film/celeb_23.jpg', title: 'Sunny Deol', subtitle: 'Theatrical Poster Launch & Media Session', category: 'Film Launches' },
-  { id: 24, src: '/film/celeb_24.jpg', title: 'Sunny Deol', subtitle: 'Action Cinema Campaign Rollout', category: 'Film Launches' },
   { id: 8, src: '/film/celeb_08.jpg', title: 'Jackie Shroff', subtitle: 'VIP Celebrity Relations & Gala Event', category: 'Red Carpet & Brand' },
   { id: 21, src: '/film/celeb_21.jpg', title: 'Jacqueline Fernandez', subtitle: 'Press Interaction & Audience Engagement', category: 'Media & Press' },
   { id: 10, src: '/film/celeb_10.jpg', title: 'Harshvardhan Rane', subtitle: 'Film Promotion Tour & Press Outreach', category: 'Film Launches' },
   { id: 33, src: '/film/celeb_33.jpg', title: 'Kiran Rao & Industry Leaders', subtitle: 'Bollywood Premiere Gala & Networking Event', category: 'Red Carpet & Brand' },
-  { id: 12, src: '/film/celeb_12.jpg', title: 'Celebrity PR Session', subtitle: 'Artist Positioning & Media Engagement', category: 'Celebrity PR' },
+  { id: 12, src: '/film/celeb_12.jpg', title: 'Zee Cine Awards', subtitle: 'Red Carpet Premiere & Media Delegation', category: 'Red Carpet & Brand' },
   { id: 15, src: '/film/celeb_15.jpg', title: 'Hrithik Roshan', subtitle: 'Exclusive Brand & Entertainment PR Meet', category: 'Celebrity PR' },
-  { id: 16, src: '/film/celeb_16.jpg', title: 'Media & Entertainment PR', subtitle: 'Digital Media Coverage & Campaign Rollout', category: 'Media & Press' },
-  { id: 17, src: '/film/celeb_17.jpg', title: 'Brand & Celebrity Activation', subtitle: 'Multi-Channel Brand Association Campaign', category: 'Red Carpet & Brand' },
-  { id: 2, src: '/film/celeb_02.jpg', title: 'Artist PR & Media Meet', subtitle: 'Strategic Talent Representation', category: 'Celebrity PR' },
-  { id: 32, src: '/film/celeb_32.jpg', title: 'Bollywood Gala & Premiere', subtitle: 'Red Carpet Movie Premiere & Media Coverage', category: 'Red Carpet & Brand' },
 ];
 
 export default function FilmGalleryShowcase() {
@@ -139,7 +139,7 @@ export default function FilmGalleryShowcase() {
             onClick={() => openLightbox(index)}
             className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-200 dark:border-eros-border shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-1.5"
           >
-            {/* Image Container with 4:5 or 1:1 Aspect Ratio */}
+            {/* Image Container */}
             <div className="relative aspect-[4/5] overflow-hidden bg-slate-950">
               <img
                 src={photo.src}
