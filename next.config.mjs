@@ -123,7 +123,17 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/about-us/:path*',
+        destination: '/philosophy',
+        permanent: true,
+      },
+      {
         source: '/about',
+        destination: '/philosophy',
+        permanent: true,
+      },
+      {
+        source: '/about/:path*',
         destination: '/philosophy',
         permanent: true,
       },
@@ -140,7 +150,17 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/what-we-offer/:path*',
+        destination: '/capabilities',
+        permanent: true,
+      },
+      {
         source: '/services',
+        destination: '/capabilities',
+        permanent: true,
+      },
+      {
+        source: '/services/:path*',
         destination: '/capabilities',
         permanent: true,
       },
@@ -149,10 +169,20 @@ const nextConfig = {
         destination: '/capabilities',
         permanent: true,
       },
+      {
+        source: '/businesses/',
+        destination: '/capabilities',
+        permanent: true,
+      },
 
       // 5. Careers & Team Aliases
       {
         source: '/career',
+        destination: '/careers',
+        permanent: true,
+      },
+      {
+        source: '/career/:path*',
         destination: '/careers',
         permanent: true,
       },
@@ -197,6 +227,11 @@ const nextConfig = {
       // 7. Contact Aliases
       {
         source: '/contact-us',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/contact-us/:path*',
         destination: '/contact',
         permanent: true,
       },
