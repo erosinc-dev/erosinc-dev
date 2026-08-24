@@ -169,7 +169,7 @@ export default function Home() {
                       </div>
                   </div>
                   <div className="relative rounded-2xl overflow-hidden aspect-[4/3] border border-slate-800 shadow-xl">
-                      <img src="/certificates/cert_01.jpg" alt="Practical Training Certification" className="w-full h-full object-cover object-top" />
+                      <img src="/certificates/cert_01.jpg" alt="Practical Training Certification" loading="lazy" decoding="async" className="w-full h-full object-cover object-top" />
                   </div>
               </div>
           </div>
@@ -184,13 +184,13 @@ export default function Home() {
                       <p className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Gallery</p>
                   </div>
                   <Link href="/gallery" className="text-eros-cyan dark:text-eros-bright hover:text-eros-cyan/80 dark:hover:text-white transition font-medium flex items-center gap-1">
-                      View all <ArrowUpRight className="w-4 h-4" />
+                      View all photos <ArrowUpRight className="w-4 h-4" />
                   </Link>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {galleryPreview.map((src, idx) => (
                       <Link href="/gallery" key={idx} className="gallery-item rounded-2xl overflow-hidden aspect-[4/3] border border-slate-200 dark:border-eros-border">
-                          <img src={src} alt={`Gallery ${idx+1}`} className="w-full h-full object-cover object-top"/>
+                          <img src={src} alt={`Gallery ${idx+1}`} loading="lazy" decoding="async" className="w-full h-full object-cover object-top"/>
                       </Link>
                   ))}
               </div>
@@ -206,14 +206,14 @@ export default function Home() {
                       <p className="font-heading text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">Latest News</p>
                   </div>
                   <Link href="/news" className="text-eros-cyan dark:text-eros-bright hover:text-eros-cyan/80 dark:hover:text-white transition font-medium flex items-center gap-1">
-                      View all <ArrowUpRight className="w-4 h-4" />
+                      View all news <ArrowUpRight className="w-4 h-4" />
                   </Link>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {allPostsData.map(({ slug, date, title, excerpt, image }) => (
                       <Link href={`/news/${slug}`} key={slug} className="group bg-white dark:bg-eros-card border border-slate-200 dark:border-eros-border rounded-3xl overflow-hidden bento-glow shadow-md transition">
-                          <img src={image} alt={title} className="w-full h-52 object-cover object-top group-hover:scale-105 transition duration-500"/>
+                          <img src={image} alt={title} loading="lazy" decoding="async" className="w-full h-52 object-cover object-top group-hover:scale-105 transition duration-500"/>
                           <div className="p-6">
                               <div className="text-xs text-eros-cyan font-semibold mb-2">{date}</div>
                               <h3 className="font-heading text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-eros-cyan dark:group-hover:text-eros-bright transition">{title}</h3>

@@ -9,6 +9,9 @@ export default function Footer() {
                 <img 
                     src="/logo.png" 
                     alt="Eros Inc Logo" 
+                    width={160}
+                    height={56}
+                    loading="lazy"
                     className="h-10 w-auto object-contain logo-blend" 
                 />
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">

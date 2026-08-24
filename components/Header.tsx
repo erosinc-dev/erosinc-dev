@@ -38,6 +38,8 @@ export default function Header() {
                 <img 
                     src="/logo.png" 
                     alt="Eros Inc Logo" 
+                    width={242}
+                    height={84}
                     className="h-12 sm:h-14 md:h-16 w-auto object-contain logo-blend transition-transform duration-300 group-hover:scale-105 filter drop-shadow-md" 
                 />
             </Link>

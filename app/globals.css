@@ -52,6 +52,8 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: colorShift 8s ease infinite;
+  will-change: background-position;
+  transform: translateZ(0);
 }
 
 /* 3D floating orbs */

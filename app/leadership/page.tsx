@@ -4,10 +4,11 @@ import Link from 'next/link';
 export default function Leadership() {
   const teamMembers = [
     { name: "Jeevan Munde", role: "Founder & MD, Eros Inc.", img: "/team/jeevan_munde.jpg", color: "text-eros-cyan", borderColor: "group-hover:border-eros-cyan" },
+    { name: "Jas Randhawa", role: "Film & PR Analyst", img: "/team/jas_randhawa.jpg", color: "text-eros-pink", borderColor: "group-hover:border-eros-pink" },
     { name: "Sukhada Dalvi", role: "Executive Crew Leader", img: "/team/sukhada_dalvi.jpg", color: "text-eros-gold", borderColor: "group-hover:border-eros-gold" },
-    { name: "Vishakh Satyan", role: "Trainer", img: "/team/vishakh_satyan.jpg", color: "text-eros-pink", borderColor: "group-hover:border-eros-pink" },
-    { name: "Ashish Mane", role: "Trainer", img: "/team/ashish_mane.jpg", color: "text-eros-bright", borderColor: "group-hover:border-eros-bright" },
-    { name: "Sairaj Jopale", role: "Crew Leader", img: "/team/sairaj_jopale.jpg", color: "text-eros-cyan", borderColor: "group-hover:border-eros-cyan" },
+    { name: "Vishakh Satyan", role: "Trainer", img: "/team/vishakh_satyan.jpg", color: "text-eros-bright", borderColor: "group-hover:border-eros-bright" },
+    { name: "Ashish Mane", role: "Trainer", img: "/team/ashish_mane.jpg", color: "text-eros-cyan", borderColor: "group-hover:border-eros-cyan" },
+    { name: "Sairaj Jopale", role: "Crew Leader", img: "/team/sairaj_jopale.jpg", color: "text-eros-gold", borderColor: "group-hover:border-eros-gold" },
   ];
 
   return (
@@ -22,10 +23,10 @@ export default function Leadership() {
             </div>
 
             {/* Team Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-6 mb-20">
                 {teamMembers.map((member, idx) => (
                     <div key={idx} className="text-center group bg-white dark:bg-eros-card/50 p-6 rounded-2xl border border-slate-200 dark:border-eros-border/50 bento-glow transition">
-                        <div className={`w-40 h-40 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg ${member.borderColor} transition-colors`}>
+                        <div className={`w-36 h-36 sm:w-40 sm:h-40 rounded-full bg-slate-200 dark:bg-eros-card mb-4 overflow-hidden mx-auto border-4 border-white dark:border-eros-bg shadow-lg ${member.borderColor} transition-colors`}>
                             <img src={member.img} alt={member.name} className="w-full h-full object-cover object-top group-hover:scale-105 transition-all duration-500" />
                         </div>
                         <h3 className="font-heading text-lg font-bold text-slate-900 dark:text-white">{member.name}</h3>
