@@ -15,34 +15,39 @@ foreach ($prop in $img.PropertyItems) {
 
 $origW = $img.Width
 $origH = $img.Height
-$maxW = 800
-$maxH = 1000
-$ratio = [Math]::Min($maxW / $origW, $maxH / $origH)
-if ($ratio -lt 1.0) {
-    $newW = [int]($origW * $ratio)
-    $newH = [int]($origH * $ratio)
-} else {
-    $newW = $origW
-    $newH = $origH
-}
 
-$bmp = New-Object System.Drawing.Bitmap($newW, $newH)
+# Crop ~7% from the top headroom to shift the face up, and take square or 4:5 aspect ratio
+$cropTop = [int]($origH * 0.065)
+$cropBottom = [int]($origH * 0.15)
+$newCropH = $origH - $cropTop - $cropBottom
+$newCropW = $origW
+
+$cropRect = New-Object System.Drawing.Rectangle(0, $cropTop, $newCropW, $newCropH)
+
+# Create 800x800 square bitmap centered on face
+$targetW = 800
+$targetH = 800
+
+$bmp = New-Object System.Drawing.Bitmap($targetW, $targetH)
 $g = [System.Drawing.Graphics]::FromImage($bmp)
 $g.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
 $g.SmoothingMode = [System.Drawing.Drawing2D.SmoothingMode]::HighQuality
 $g.PixelOffsetMode = [System.Drawing.Drawing2D.PixelOffsetMode]::HighQuality
 $g.CompositingQuality = [System.Drawing.Drawing2D.CompositingQuality]::HighQuality
-$g.DrawImage($img, 0, 0, $newW, $newH)
+
+# Draw cropped area scaled to target
+$destRect = New-Object System.Drawing.Rectangle(0, 0, $targetW, $targetH)
+$g.DrawImage($img, $destRect, $cropRect, [System.Drawing.GraphicsUnit]::Pixel)
 
 $img.Dispose()
 $g.Dispose()
 
 $codec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq 'image/jpeg' }
 $param = New-Object System.Drawing.Imaging.EncoderParameters(1)
-$param.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, 85)
+$param.Param[0] = New-Object System.Drawing.Imaging.EncoderParameter([System.Drawing.Imaging.Encoder]::Quality, 88)
 
 $bmp.Save($dst, $codec, $param)
 $bmp.Dispose()
 
 $fileSize = (Get-Item $dst).Length
-Write-Host "Successfully saved and optimized $dst ($fileSize bytes)"
+Write-Host "Successfully adjusted crop and saved $dst ($fileSize bytes)"
